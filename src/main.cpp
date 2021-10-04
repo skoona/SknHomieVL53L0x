@@ -10,8 +10,13 @@ VL53L1X sensor;
 
 volatile unsigned long gulTimebase = 0,
                        gulLastTimebase = 0,
-                       gulRangingDuration = 0;
-volatile bool gvRangeDuration = false;
+                       gulCycleTime = 20000,
+                       gulCycleTimebase = 0,
+                       gulRangingDuration = 0,
+                       gulElapsedTime = 0;
+volatile bool gvbRangeDuration = false,
+              gvbLastRangeCycle = true,
+              gvbRangeCycle = false;
 
 void setup()
 {
@@ -39,18 +44,29 @@ void setup()
     if (sensor.setMeasurementTimingBudget(170000)) {
         Serial.println("170us timing budget accepted.");
 
-        sensor.startContinuous(250);
+        gulCycleTimebase = millis() - gulCycleTime;
         gulLastTimebase = millis();
         gulRangingDuration = 250;
-        Serial.println("Starting continuous ranging with 250ms accepted.");
+        
+        // sensor.startContinuous(250);
+        // Serial.println("Start continuous ranging at 250ms accepted.");
     }
 }
 
 void loop()
 {
     gulTimebase = millis();
-    gvRangeDuration = ((gulTimebase - gulLastTimebase) >= gulRangingDuration);
-    if (gvRangeDuration) {
+    gulElapsedTime = gulTimebase - gulCycleTimebase;
+    gvbRangeDuration = ((gulTimebase - gulLastTimebase) >= gulRangingDuration);
+    gvbRangeCycle = (gulElapsedTime >= gulCycleTime);
+
+    if (gvbLastRangeCycle && gvbRangeCycle)  {
+        gvbLastRangeCycle = !gvbLastRangeCycle;
+        sensor.startContinuous(250);
+        Serial.println("Start continuous ranging @ 250ms accepted.");
+    }
+
+    if (gvbRangeDuration && gvbRangeCycle) {
         if (!digitalRead(PIN_VL_GPIO)) 
         {
             sensor.read(false);
@@ -67,7 +83,15 @@ void loop()
             Serial.println();
 
             gulLastTimebase = gulTimebase;
-            gvRangeDuration = false;
+            gvbRangeDuration = false;
         }
+    }
+
+    if (gulElapsedTime >= (gulCycleTime * 2 - 10))
+    {
+        sensor.stopContinuous();
+        gulCycleTimebase = gulTimebase;
+        gvbLastRangeCycle = !gvbLastRangeCycle;
+        Serial.println("Stoping continuous ranging accepted.");
     }
 }
