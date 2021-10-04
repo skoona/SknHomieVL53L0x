@@ -1,0 +1,8 @@
+01:42:18.881 > x00,hd_drv:00,wp_drv:0x00
+01:42:18.881 > mode:DIO, clock div:2
+01:42:18.881 > load:0x3fff0018,len:4
+01:42:18.881 > load:0x3fff001c,len:1044
+01:42:18.881 > load:0x40078000,len:10124
+01:42:18.881 > load:0x40080400,len:5828
+01:42:18.881 > entry 0x400806a8
+01:42:18.881 > Failed to detect and initialize sensor!

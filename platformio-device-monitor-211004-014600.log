@@ -1,0 +1,225 @@
+01:46:00.854 > :0x00,hd_drv^�b��}����0x00
+01:46:00.854 > mode:DIO, clock div:2
+01:46:00.854 > load:0x3fff0018,len:4
+01:46:00.854 > load:0x3fff001c,len:1044
+01:46:00.854 > load:0x40078000,len:10124
+01:46:00.854 > load:0x40080400,len:5828
+01:46:00.854 > entry 0x400806a8
+01:46:01.616 > Failed to detect and initialize sensor!
+01:46:02.617 > Failed to detect and initialize sensor!
+01:46:03.667 > Failed to detect and initialize sensor!
+01:46:04.717 > Failed to detect and initialize sensor!
+01:46:05.767 > Failed to detect and initialize sensor!
+01:46:06.817 > Failed to detect and initialize sensor!
+01:46:07.867 > Failed to detect and initialize sensor!
+01:46:08.917 > Failed to detect and initialize sensor!
+01:46:09.917 > Failed to detect and initialize sensor!
+01:46:10.968 > Failed to detect and initialize sensor!
+01:46:12.018 > Failed to detect and initialize sensor!
+01:46:13.068 > Failed to detect and initialize sensor!
+01:46:14.069 > Failed to detect and initialize sensor!
+01:46:15.169 > Failed to detect and initialize sensor!
+01:46:16.269 > Failed to detect and initialize sensor!
+01:46:17.369 > Failed to detect and initialize sensor!
+01:46:18.469 > Failed to detect and initialize sensor!
+01:46:19.569 > Failed to detect and initialize sensor!
+01:46:20.669 > Failed to detect and initialize sensor!
+01:46:21.769 > Failed to detect and initialize sensor!
+01:46:22.769 > Failed to detect and initialize sensor!
+01:46:23.770 > Failed to detect and initialize sensor!
+01:46:24.771 > Failed to detect and initialize sensor!
+01:46:25.771 > Failed to detect and initialize sensor!
+01:46:26.822 > Failed to detect and initialize sensor!
+01:46:27.873 > Failed to detect and initialize sensor!
+01:46:28.924 > Failed to detect and initialize sensor!
+01:46:29.975 > Failed to detect and initialize sensor!
+01:46:30.975 > Failed to detect and initialize sensor!
+01:46:31.976 > Failed to detect and initialize sensor!
+01:46:32.977 > Failed to detect and initialize sensor!
+01:46:34.028 > Failed to detect and initialize sensor!
+01:46:35.079 > Failed to detect and initialize sensor!
+01:46:36.130 > Failed to detect and initialize sensor!
+01:46:37.131 > Failed to detect and initialize sensor!
+01:46:38.181 > Failed to detect and initialize sensor!
+01:46:39.183 > Failed to detect and initialize sensor!
+01:46:40.183 > Failed to detect and initialize sensor!
+01:46:41.233 > Failed to detect and initialize sensor!
+01:46:42.235 > Failed to detect and initialize sensor!
+01:46:43.235 > Failed to detect and initialize sensor!
+01:46:44.286 > Failed to detect and initialize sensor!
+01:46:45.287 > Failed to detect and initialize sensor!
+01:46:46.288 > Failed to detect and initialize sensor!
+01:46:47.289 > Failed to detect and initialize sensor!
+01:46:48.290 > Failed to detect and initialize sensor!
+01:46:49.341 > Failed to detect and initialize sensor!
+01:46:50.342 > Failed to detect and initialize sensor!
+01:46:50.811 > Guru Meditation Error: Core  0 panic'ed (IllegalInstruction). Exception was unhandled.
+01:46:50.819 > Memory dump at 0x400e3ff8: ffffffff ffffffff ffab0200
+01:46:50.824 > Core 0 register dump:
+01:46:50.826 > PC      : 0x400e3fff  PS      : 0x00060d30  A0      : 0x80086a78  A1      : 0x3ffb78b0  
+01:46:50.834 > A2      : 0x00000000  A3      : 0x00000000  A4      : 0x00060023  A5      : 0x3ffb796c  
+01:46:50.842 > A6      : 0x00000000  A7      : 0x00000001  A8      : 0x800e3fff  A9      : 0x3ffb7870  
+01:46:50.849 > A10     : 0x00000001  A11     : 0x00000000  A12     : 0x3ffaffe8  A13     : 0x00000000  
+01:46:50.857 > A14     : 0x3ffaff9c  A15     : 0x00060023  SAR     : 0x00000000  EXCCAUSE: 0x00000000  
+01:46:50.865 > EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+01:46:50.873 > 
+01:46:50.873 > ELF file SHA256: 0000000000000000
+01:46:50.876 > 
+01:46:50.876 > Backtrace: 0x400e3fff:0x3ffb78b0 0x40086a75:0x3ffb78d0
+01:46:50.881 > 
+01:46:50.881 > Rebooting...
+01:46:50.883 > ets Jun  8 2016 00:22:57
+01:46:50.885 > 
+01:46:50.885 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:50.890 > flash read err, 1000
+01:46:50.892 > ets_main.c 371 
+01:46:51.790 > ets Jun  8 2016 00:22:57
+01:46:51.793 > 
+01:46:51.793 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:51.799 > flash read err, 1000
+01:46:51.801 > ets_main.c 371 
+01:46:52.144 > ets Jun  8 2016 00:22:57
+01:46:52.148 > 
+01:46:52.148 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:52.153 > flash read err, 1000
+01:46:52.155 > ets_main.c 371 
+01:46:52.499 > ets Jun  8 2016 00:22:57
+01:46:52.502 > 
+01:46:52.502 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:52.507 > flash read err, 1000
+01:46:52.509 > ets_main.c 371 
+01:46:52.853 > ets Jun  8 2016 00:22:57
+01:46:52.856 > 
+01:46:52.856 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:52.862 > flash read err, 1000
+01:46:52.863 > ets_main.c 371 
+01:46:53.207 > ets Jun  8 2016 00:22:57
+01:46:53.210 > 
+01:46:53.211 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:53.216 > flash read err, 1000
+01:46:53.218 > ets_main.c 371 
+01:46:53.562 > ets Jun  8 2016 00:22:57
+01:46:53.565 > 
+01:46:53.565 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:53.570 > flash read err, 1000
+01:46:53.572 > ets_main.c 371 
+01:46:53.916 > ets Jun  8 2016 00:22:57
+01:46:53.918 > 
+01:46:53.918 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:53.924 > flash read err, 1000
+01:46:53.926 > ets_main.c 371 
+01:46:54.270 > ets Jun  8 2016 00:22:57
+01:46:54.273 > 
+01:46:54.273 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:54.278 > flash read err, 1000
+01:46:54.279 > ets_main.c 371 
+01:46:54.624 > ets Jun  8 2016 00:22:57
+01:46:54.626 > 
+01:46:54.626 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:54.632 > flash read err, 1000
+01:46:54.635 > ets_main.c 371 
+01:46:54.978 > ets Jun  8 2016 00:22:57
+01:46:54.981 > 
+01:46:54.981 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:54.986 > flash read err, 1000
+01:46:54.988 > ets_main.c 371 
+01:46:55.333 > ets Jun  8 2016 00:22:57
+01:46:55.335 > 
+01:46:55.335 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:55.340 > flash read err, 1000
+01:46:55.342 > ets_main.c 371 
+01:46:55.687 > ets Jun  8 2016 00:22:57
+01:46:55.689 > 
+01:46:55.689 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:55.695 > flash read err, 1000
+01:46:55.696 > ets_main.c 371 
+01:46:56.041 > ets Jun  8 2016 00:22:57
+01:46:56.043 > 
+01:46:56.043 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:56.049 > flash read err, 1000
+01:46:56.052 > ets_main.c 371 
+01:46:56.395 > ets Jun  8 2016 00:22:57
+01:46:56.397 > 
+01:46:56.398 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:56.403 > flash read err, 1000
+01:46:56.405 > ets_main.c 371 
+01:46:56.749 > ets Jun  8 2016 00:22:57
+01:46:56.752 > 
+01:46:56.752 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:56.757 > flash read err, 1000
+01:46:56.759 > ets_main.c 371 
+01:46:57.104 > ets Jun  8 2016 00:22:57
+01:46:57.106 > 
+01:46:57.106 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:57.111 > flash read err, 1000
+01:46:57.113 > ets_main.c 371 
+01:46:57.458 > ets Jun  8 2016 00:22:57
+01:46:57.460 > 
+01:46:57.460 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:57.466 > flash read err, 1000
+01:46:57.467 > ets_main.c 371 
+01:46:57.812 > ets Jun  8 2016 00:22:57
+01:46:57.814 > 
+01:46:57.814 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:46:57.820 > flash read err, 1000
+01:46:57.822 > ets_main.c 371 
+01:47:03.030 > ets Jun  8 2016 00:22:57
+01:47:03.032 > 
+01:47:03.032 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:47:03.037 > flash read err, 1000
+01:47:03.039 > ets_main.c 371 
+01:47:03.384 > ets Jun  8 2016 00:22:57
+01:47:03.386 > 
+01:47:03.386 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:47:03.391 > flash read err, 1000
+01:47:03.393 > ets_main.c 371 
+01:47:03.738 > ets Jun  8 2016 00:22:57
+01:47:03.740 > 
+01:47:03.740 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:47:03.745 > flash read err, 1000
+01:47:03.747 > ets_main.c 371 
+01:47:04.091 > ets Jun  8 2016 00:22:57
+01:47:04.094 > 
+01:47:04.094 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:47:04.099 > flash read err, 1000
+01:47:04.101 > ets_main.c 371 
+01:47:04.445 > ets Jun  8 2016 00:22:57
+01:47:04.448 > 
+01:47:04.448 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:47:04.453 > flash read err, 1000
+01:47:04.455 > ets_main.c 371 
+01:47:04.799 > ets Jun  8 2016 00:22:57
+01:47:04.802 > 
+01:47:04.802 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:47:04.807 > flash read err, 1000
+01:47:04.809 > ets_main.c 371 
+01:47:05.153 > ets Jun  8 2016 00:22:57
+01:47:05.156 > 
+01:47:05.156 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:47:05.161 > flash read err, 1000
+01:47:05.163 > ets_main.c 371 
+01:47:05.507 > ets Jun  8 2016 00:22:57
+01:47:05.510 > 
+01:47:05.510 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:47:05.515 > flash read err, 1000
+01:47:05.517 > ets_main.c 371 
+01:47:05.861 > ets Jun  8 2016 00:22:57
+01:47:05.863 > 
+01:47:05.864 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:47:05.869 > flash read err, 1000
+01:47:05.871 > ets_main.c 371 
+01:47:06.215 > ets Jun  8 2016 00:22:57
+01:47:06.217 > 
+01:47:06.218 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:47:06.223 > flash read err, 1000
+01:47:06.225 > ets_main.c 371 
+01:47:06.569 > ets Jun  8 2016 00:22:57
+01:47:06.572 > 
+01:47:06.572 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:47:06.577 > flash read err, 1000
+01:47:06.579 > ets_main.c 371 
+01:47:06.923 > ets Jun  8 2016 00:22:57
+01:47:06.926 > 
+01:47:06.926 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:47:06.931 > flash read err, 1000
+01:47:06.933 > ets_main.c 371 

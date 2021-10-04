@@ -1,0 +1,125 @@
+02:35:58.994 > ets Jun  8 2016 00:22:57
+02:35:58.997 > 
+02:35:58.997 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:35:59.002 > configsip: 0, SPIWP:0xee
+02:35:59.004 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+02:35:59.010 > mode:DIO, clock div:2
+02:35:59.012 > load:0x3fff0018,len:4
+02:35:59.014 > load:0x3fff001c,len:1044
+02:35:59.017 > load:0x40078000,len:10124
+02:35:59.019 > load:0x40080400,len:5828
+02:35:59.021 > entry 0x400806a8
+02:36:00.155 > Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+02:36:00.163 > Memory dump at 0x400d0e00: ffab0000 ffffffff ffffffff
+02:36:00.168 > Core 1 register dump:
+02:36:00.170 > PC      : 0x400d0e04  PS      : 0x00060530  A0      : 0x800d3a99  A1      : 0x3ffb1f80  
+02:36:00.178 > A2      : 0x3ffbfeb8  A3      : 0x3ffc0198  A4      : 0x00000020  A5      : 0x80000020  
+02:36:00.186 > A6      : 0x00000008  A7      : 0x00000001  A8      : 0x800d0df9  A9      : 0x3ffb1f60  
+02:36:00.194 > A10     : 0x802367f2  A11     : 0x3f400120  A12     : 0x00000000  A13     : 0x00061a80  
+02:36:00.201 > A14     : 0x00000003  A15     : 0x00000000  SAR     : 0x00000037  EXCCAUSE: 0x00000000  
+02:36:00.209 > EXCVADDR: 0x00000000  LBEG    : 0x4000c2e0  LEND    : 0x4000c2f6  LCOUNT  : 0x00000000  
+02:36:00.217 > 
+02:36:00.217 > ELF file SHA256: 0000000000000000
+02:36:00.220 > 
+02:36:00.221 > Backtrace: 0x400d0e04:0x3ffb1f80 0x400d3a96:0x3ffb1fb0 0x40086a75:0x3ffb1fd0
+02:36:00.227 > 
+02:36:00.227 > Rebooting...
+02:36:00.229 > ets Jun  8 2016 00:22:57
+02:36:00.231 > 
+02:36:00.232 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:00.236 > flash read err, 1000
+02:36:00.238 > ets_main.c 371 
+02:36:01.138 > ets Jun  8 2016 00:22:57
+02:36:01.141 > 
+02:36:01.141 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:01.146 > flash read err, 1000
+02:36:01.148 > ets_main.c 371 
+02:36:01.493 > ets Jun  8 2016 00:22:57
+02:36:01.496 > 
+02:36:01.496 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:01.501 > flash read err, 1000
+02:36:01.503 > ets_main.c 371 
+02:36:01.849 > ets Jun  8 2016 00:22:57
+02:36:01.851 > 
+02:36:01.851 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:01.856 > flash read err, 1000
+02:36:01.858 > ets_main.c 371 
+02:36:02.204 > ets Jun  8 2016 00:22:57
+02:36:02.206 > 
+02:36:02.206 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:02.212 > flash read err, 1000
+02:36:02.213 > ets_main.c 371 
+02:36:02.559 > ets Jun  8 2016 00:22:57
+02:36:02.561 > 
+02:36:02.561 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:02.567 > flash read err, 1000
+02:36:02.569 > ets_main.c 371 
+02:36:02.914 > ets Jun  8 2016 00:22:57
+02:36:02.917 > 
+02:36:02.917 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:02.922 > flash read err, 1000
+02:36:02.924 > ets_main.c 371 
+02:36:03.270 > ets Jun  8 2016 00:22:57
+02:36:03.272 > 
+02:36:03.272 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:03.277 > flash read err, 1000
+02:36:03.279 > ets_main.c 371 
+02:36:03.624 > ets Jun  8 2016 00:22:57
+02:36:03.627 > 
+02:36:03.627 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:03.632 > flash read err, 1000
+02:36:03.634 > ets_main.c 371 
+02:36:03.979 > ets Jun  8 2016 00:22:57
+02:36:03.982 > 
+02:36:03.982 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:03.987 > flash read err, 1000
+02:36:03.989 > ets_main.c 371 
+02:36:04.335 > ets Jun  8 2016 00:22:57
+02:36:04.337 > 
+02:36:04.337 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:04.343 > flash read err, 1000
+02:36:04.345 > ets_main.c 371 
+02:36:04.690 > ets Jun  8 2016 00:22:57
+02:36:04.692 > 
+02:36:04.693 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:04.698 > flash read err, 1000
+02:36:04.700 > ets_main.c 371 
+02:36:05.045 > ets Jun  8 2016 00:22:57
+02:36:05.048 > 
+02:36:05.048 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:05.053 > flash read err, 1000
+02:36:05.055 > ets_main.c 371 
+02:36:05.400 > ets Jun  8 2016 00:22:57
+02:36:05.403 > 
+02:36:05.403 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:05.408 > flash read err, 1000
+02:36:05.410 > ets_main.c 371 
+02:36:05.755 > ets Jun  8 2016 00:22:57
+02:36:05.758 > 
+02:36:05.758 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:05.763 > flash read err, 1000
+02:36:05.765 > ets_main.c 371 
+02:36:06.475 > ets Jun  8 2016 00:22:57
+02:36:06.477 > 
+02:36:06.478 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:06.482 > flash read err, 1000
+02:36:06.484 > ets_main.c 371 
+02:36:06.830 > ets Jun  8 2016 00:22:57
+02:36:06.832 > 
+02:36:06.833 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:06.838 > flash read err, 1000
+02:36:06.840 > ets_main.c 371 
+02:36:07.185 > ets Jun  8 2016 00:22:57
+02:36:07.188 > 
+02:36:07.188 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:07.193 > flash read err, 1000
+02:36:07.195 > ets_main.c 371 
+02:36:07.540 > ets Jun  8 2016 00:22:57
+02:36:07.543 > 
+02:36:07.543 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+02:36:07.548 > flash read err, 1000
+02:36:07.550 > ets_main.c 371 
+02:36:12.118 > ets Jun  8 2016 00:22:57
+02:36:12.121 > 
+02:36:12.121 > rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+02:36:12.128 > waiting for download

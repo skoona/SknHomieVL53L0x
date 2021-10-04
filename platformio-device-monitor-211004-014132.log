@@ -1,0 +1,222 @@
+01:41:32.967 > ets Jun  8 2016 00:22:57
+01:41:32.967 > 
+01:41:32.967 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:32.967 > flash read err, 1000
+01:41:32.967 > ets_main.c 371 
+01:41:33.215 > ets Jun  8 2016 00:22:57
+01:41:33.217 > 
+01:41:33.217 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:33.223 > flash read err, 1000
+01:41:33.225 > ets_main.c 371 
+01:41:33.568 > ets Jun  8 2016 00:22:57
+01:41:33.571 > 
+01:41:33.571 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:33.576 > flash read err, 1000
+01:41:33.578 > ets_main.c 371 
+01:41:33.921 > ets Jun  8 2016 00:22:57
+01:41:33.924 > 
+01:41:33.924 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:33.929 > flash read err, 1000
+01:41:33.931 > ets_main.c 371 
+01:41:34.274 > ets Jun  8 2016 00:22:57
+01:41:34.277 > 
+01:41:34.277 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:34.282 > flash read err, 1000
+01:41:34.284 > ets_main.c 371 
+01:41:34.627 > ets Jun  8 2016 00:22:57
+01:41:34.630 > 
+01:41:34.630 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:34.636 > flash read err, 1000
+01:41:34.638 > ets_main.c 371 
+01:41:34.981 > ets Jun  8 2016 00:22:57
+01:41:34.983 > 
+01:41:34.984 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:34.989 > flash read err, 1000
+01:41:34.991 > ets_main.c 371 
+01:41:35.334 > ets Jun  8 2016 00:22:57
+01:41:35.337 > 
+01:41:35.337 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:35.342 > configsip: 0, SPIWP:0xee
+01:41:35.344 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+01:41:35.351 > mode:DIO, clock div:2
+01:41:35.352 > load:0x3fff0018,len:4
+01:41:35.354 > load:0xffffffff,len:-1
+01:41:35.687 > ets Jun  8 2016 00:22:57
+01:41:35.690 > 
+01:41:35.690 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:35.695 > flash read err, 1000
+01:41:35.697 > ets_main.c 371 
+01:41:36.040 > ets Jun  8 2016 00:22:57
+01:41:36.043 > 
+01:41:36.043 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:36.048 > flash read err, 1000
+01:41:36.050 > ets_main.c 371 
+01:41:36.393 > ets Jun  8 2016 00:22:57
+01:41:36.396 > 
+01:41:36.396 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:36.401 > configsip: 0, SPIWP:0xee
+01:41:36.404 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+01:41:36.410 > mode:DIO, clock div:2
+01:41:36.412 > load:0x3fff0018,len:4
+01:41:36.414 > load:0x3fff001c,len:1044
+01:41:36.416 > load:0x40078000,len:10124
+01:41:36.418 > load:0x40080400,len:5828
+01:41:36.421 > csum err:0xcf!=0xe0
+01:41:36.423 > ets_main.c 371 
+01:41:36.746 > ets Jun  8 2016 00:22:57
+01:41:36.749 > 
+01:41:36.749 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:36.755 > configsip: 0, SPIWP:0xee
+01:41:36.757 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+01:41:36.763 > mode:DIO, clock div:2
+01:41:36.765 > load:0x3fff0018,len:4
+01:41:36.767 > load:0x3fff001c,len:1044
+01:41:36.769 > load:0x40078000,len:10124
+01:41:36.772 > load:0x40080400,len:5828
+01:41:36.774 > csum err:0xcf!=0xe0
+01:41:36.776 > ets_main.c 371 
+01:41:37.099 > ets Jun  8 2016 00:22:57
+01:41:37.102 > 
+01:41:37.102 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:37.108 > configsip: 0, SPIWP:0xee
+01:41:37.110 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+01:41:37.116 > mode:DIO, clock div:2
+01:41:37.118 > load:0x3fff0018,len:4
+01:41:37.120 > load:0x3fff001c,len:1044
+01:41:37.123 > load:0x40078000,len:10124
+01:41:37.125 > load:0x40080400,len:5828
+01:41:37.127 > csum err:0xcf!=0xe0
+01:41:37.129 > ets_main.c 371 
+01:41:37.453 > ets Jun  8 2016 00:22:57
+01:41:37.456 > 
+01:41:37.456 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:37.461 > configsip: 0, SPIWP:0xee
+01:41:37.463 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+01:41:37.470 > mode:DIO, clock div:2
+01:41:37.472 > load:0x3fff0018,len:4
+01:41:37.474 > load:0x3fff001c,len:1044
+01:41:37.476 > load:0x40078000,len:10124
+01:41:37.478 > load:0x40080400,len:5828
+01:41:37.480 > csum err:0xcf!=0xe0
+01:41:37.482 > ets_main.c 371 
+01:41:41.958 > ets Jun  8 2016 00:22:57
+01:41:41.961 > 
+01:41:41.961 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:41.966 > configsip: 0, SPIWP:0xee
+01:41:41.968 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+01:41:41.974 > mode:DIO, clock div:2
+01:41:41.976 > load:0x3fff0018,len:4
+01:41:41.978 > load:0x3fff001c,len:1044
+01:41:41.981 > load:0x40078000,len:10124
+01:41:41.983 > load:0x40080400,len:5828
+01:41:41.985 > csum err:0xcf!=0xe0
+01:41:41.987 > ets_main.c 371 
+01:41:42.310 > ets Jun  8 2016 00:22:57
+01:41:42.313 > 
+01:41:42.314 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:42.319 > configsip: 0, SPIWP:0xee
+01:41:42.321 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+01:41:42.327 > mode:DIO, clock div:2
+01:41:42.329 > load:0x3fff0018,len:4
+01:41:42.331 > load:0x3fff001c,len:1044
+01:41:42.334 > load:0x40078000,len:10124
+01:41:42.336 > load:0x40080400,len:5828
+01:41:42.338 > csum err:0xcf!=0xe0
+01:41:42.340 > ets_main.c 371 
+01:41:42.663 > ets Jun  8 2016 00:22:57
+01:41:42.666 > 
+01:41:42.666 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:42.672 > configsip: 0, SPIWP:0xee
+01:41:42.674 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+01:41:42.680 > mode:DIO, clock div:2
+01:41:42.682 > load:0x3fff0018,len:4
+01:41:42.684 > load:0x3fff001c,len:1044
+01:41:42.687 > load:0x40078000,len:10124
+01:41:42.689 > load:0x40080400,len:5828
+01:41:42.691 > csum err:0xcf!=0xe0
+01:41:42.693 > ets_main.c 371 
+01:41:43.016 > ets Jun  8 2016 00:22:57
+01:41:43.019 > 
+01:41:43.019 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:43.025 > configsip: 0, SPIWP:0xee
+01:41:43.027 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+01:41:43.033 > mode:DIO, clock div:2
+01:41:43.035 > load:0x3fff0018,len:4
+01:41:43.037 > load:0x3fff001c,len:1044
+01:41:43.039 > load:0x40078000,len:10124
+01:41:43.042 > load:0x40080400,len:5828
+01:41:43.044 > csum err:0xcf!=0xe0
+01:41:43.046 > ets_main.c 371 
+01:41:43.369 > ets Jun  8 2016 00:22:57
+01:41:43.372 > 
+01:41:43.372 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:43.378 > configsip: 0, SPIWP:0xee
+01:41:43.380 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+01:41:43.386 > mode:DIO, clock div:2
+01:41:43.388 > load:0x3fff0018,len:4
+01:41:43.390 > load:0x3fff001c,len:1044
+01:41:43.392 > load:0x40078000,len:10124
+01:41:43.395 > load:0x40080400,len:5828
+01:41:43.397 > csum err:0xcf!=0xe0
+01:41:43.399 > ets_main.c 371 
+01:41:43.722 > ets Jun  8 2016 00:22:57
+01:41:43.725 > 
+01:41:43.725 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:43.731 > configsip: 0, SPIWP:0xee
+01:41:43.733 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+01:41:43.739 > mode:DIO, clock div:2
+01:41:43.741 > load:0x3fff0018,len:4
+01:41:43.743 > load:0x3fff001c,len:1044
+01:41:43.745 > load:0x40078000,len:10124
+01:41:43.748 > load:0x40080400,len:5828
+01:41:43.750 > csum err:0xcf!=0xe0
+01:41:43.752 > ets_main.c 371 
+01:41:44.075 > ets Jun  8 2016 00:22:57
+01:41:44.078 > 
+01:41:44.078 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:44.084 > configsip: 0, SPIWP:0xee
+01:41:44.086 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+01:41:44.092 > mode:DIO, clock div:2
+01:41:44.094 > cmd len -1
+01:41:44.095 > ets_main.c 371 
+01:41:44.428 > ets Jun  8 2016 00:22:57
+01:41:44.431 > 
+01:41:44.431 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:44.436 > flash read err, 1000
+01:41:44.438 > ets_main.c 371 
+01:41:44.781 > ets Jun  8 2016 00:22:57
+01:41:44.784 > 
+01:41:44.784 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:44.789 > flash read err, 1000
+01:41:44.791 > ets_main.c 371 
+01:41:45.134 > ets Jun  8 2016 00:22:57
+01:41:45.137 > 
+01:41:45.137 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:45.143 > flash read err, 1000
+01:41:45.144 > ets_main.c 371 
+01:41:45.487 > ets Jun  8 2016 00:22:57
+01:41:45.490 > 
+01:41:45.490 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:45.496 > configsip: 0, SPIWP:0xee
+01:41:45.498 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+01:41:45.504 > mode:DIO, clock div:2
+01:41:45.506 > load:0x3fff0018,len:4
+01:41:45.508 > load:0xffffffff,len:-1
+01:41:45.840 > ets Jun  8 2016 00:22:57
+01:41:45.843 > 
+01:41:45.843 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:45.849 > flash read err, 1000
+01:41:45.851 > ets_main.c 371 
+01:41:46.193 > ets Jun  8 2016 00:22:57
+01:41:46.196 > 
+01:41:46.196 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+01:41:46.202 > flash read err, 1000
+01:41:46.204 > ets_main.c 371 
+01:41:46.546 > ets Jun  8 2016 00:22:57
+01:41:46.549 > 
+01:41:46.549 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+01:41:46.557 > waiting for download
+01:41:54.654 > ets Jun  8 2016 00:22:57
+01:41:54.657 > 
+01:41:54.657 > rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+01:41:54.664 > waiting for download
