@@ -39,80 +39,88 @@ HomieNode V3 featuring:
 
 ### Homie Serial Runtime Log
 ```
-09:19:12.400 > 💡 Firmware Time of Flight Ranger (1.0.0)
-09:19:12.400 > 🔌 Booting into normal mode 🔌
-09:19:12.684 > {} Stored configuration
-09:19:12.687 >   • Hardware device ID: 240ac4594254
-09:19:12.690 >   • Device ID: TOFRanger
-09:19:12.693 >   • Name: Time of Flight Ranger
-09:19:12.696 >   • Device Stats Interval: 300 sec
-09:19:12.699 >   • Wi-Fi: 
-09:19:12.700 >     ◦ SSID: SFNSS1-24G
-09:19:12.702 >     ◦ Password not shown
-09:19:12.705 >   • MQTT: 
-09:19:12.706 >     ◦ Host: openhab.skoona.net
-09:19:12.709 >     ◦ Port: 1883
-09:19:12.711 >     ◦ Base topic: sknSensors/
-09:19:12.714 >     ◦ Auth? yes
-09:19:12.715 >     ◦ Username: openhabian
-09:19:12.718 >     ◦ Password not shown
-09:19:12.720 >   • OTA: 
-09:19:12.721 >     ◦ Enabled? yes
-09:19:12.723 >   • Custom settings: 
-09:19:12.726 >     ◦ duration: 15 (set)
-09:19:12.728 > • Ranging Module:
-09:19:12.735 > 〽 Medium distance mode accepted.
-09:19:12.738 > 〽 200us timing budget accepted.
-09:19:12.741 > ↕ Attempting to connect to Wi-Fi...
-09:19:15.809 > ✔ Wi-Fi connected, IP: 10.100.1.244
-09:19:15.813 > Triggering WIFI_CONNECTED event...
-09:19:15.816 > ↕ Attempting to connect to MQTT...
-09:19:15.845 > Sending initial information...
-09:19:15.903 > ✔ MQTT ready
-09:19:15.904 > Triggering MQTT_READY event...
-09:19:15.907 > 〽 Node: TOF Ranger Ready to operate.
-09:19:15.911 > Calling setup function...
-09:19:15.913 > 〽 Sending statistics...
-09:19:15.915 >   • Interval: 305s (300s including 5s grace time)
-09:19:15.920 >   • Wi-Fi signal quality: 100%
-09:19:15.923 >   • Uptime: 4s
-09:19:18.852 > 📢 Calling broadcast handler...
-09:19:18.855 > Received broadcast level alert: OH3 Offline
-09:19:18.859 > 📢 Calling broadcast handler...
-09:19:18.862 > Received broadcast level LWT: HomieMonitor Offline!
-09:19:32.734 > 〽 Start continuous ranging @ 280 ms accepted.
-09:19:32.982 > 〽 range: 350 mm         status: range valid     signal: 41.19 MCPS      ambient: 0.11 MCPS
-09:19:33.256 > 〽 range: 359 mm         status: range valid     signal: 20.73 MCPS      ambient: 0.06 MCPS
-09:19:33.542 > 〽 range: 357 mm         status: range valid     signal: 19.83 MCPS      ambient: 0.05 MCPS
-09:19:33.804 > 〽 range: 358 mm         status: range valid     signal: 19.87 MCPS      ambient: 0.05 MCPS
-09:19:34.091 > 〽 range: 357 mm         status: range valid     signal: 19.80 MCPS      ambient: 0.05 MCPS
-09:19:34.360 > 〽 range: 357 mm         status: range valid     signal: 19.90 MCPS      ambient: 0.05 MCPS
-09:19:34.656 > 〽 range: 359 mm         status: range valid     signal: 19.91 MCPS      ambient: 0.05 MCPS
-09:19:34.908 > 〽 range: 359 mm         status: range valid     signal: 19.95 MCPS      ambient: 0.05 MCPS
-09:19:35.194 > 〽 range: 358 mm         status: range valid     signal: 19.97 MCPS      ambient: 0.05 MCPS
-09:19:35.476 > 〽 range: 356 mm         status: range valid     signal: 19.57 MCPS      ambient: 0.05 MCPS
-09:19:35.756 > 〽 range: 359 mm         status: range valid     signal: 19.49 MCPS      ambient: 0.05 MCPS
-09:19:36.059 > 〽 range: 358 mm         status: range valid     signal: 20.00 MCPS      ambient: 0.05 MCPS
-09:19:36.320 > 〽 range: 357 mm         status: range valid     signal: 19.52 MCPS      ambient: 0.05 MCPS
-09:19:36.603 > 〽 range: 358 mm         status: range valid     signal: 19.98 MCPS      ambient: 0.05 MCPS
-09:19:36.898 > 〽 range: 357 mm         status: range valid     signal: 19.59 MCPS      ambient: 0.05 MCPS
-09:19:37.160 > 〽 range: 358 mm         status: range valid     signal: 19.96 MCPS      ambient: 0.05 MCPS
-09:19:37.450 > 〽 range: 358 mm         status: range valid     signal: 19.87 MCPS      ambient: 0.05 MCPS
-09:19:37.724 > 〽 range: 357 mm         status: range valid     signal: 19.68 MCPS      ambient: 0.05 MCPS
-09:19:37.995 > 〽 range: 358 mm         status: range valid     signal: 19.95 MCPS      ambient: 0.06 MCPS
-09:19:38.281 > 〽 range: 358 mm         status: range valid     signal: 19.64 MCPS      ambient: 0.05 MCPS
-09:19:38.563 > 〽 range: 358 mm         status: range valid     signal: 19.65 MCPS      ambient: 0.05 MCPS
-09:19:38.851 > 〽 range: 359 mm         status: range valid     signal: 19.92 MCPS      ambient: 0.06 MCPS
-09:19:39.128 > 〽 range: 357 mm         status: range valid     signal: 20.02 MCPS      ambient: 0.05 MCPS
-09:19:39.400 > 〽 range: 358 mm         status: range valid     signal: 19.92 MCPS      ambient: 0.06 MCPS
-09:19:39.675 > 〽 range: 358 mm         status: range valid     signal: 20.00 MCPS      ambient: 0.05 MCPS
-09:19:39.983 > 〽 range: 357 mm         status: range valid     signal: 19.67 MCPS      ambient: 0.05 MCPS
-09:19:40.252 > 〽 range: 358 mm         status: range valid     signal: 19.95 MCPS      ambient: 0.05 MCPS
-09:19:40.533 > 〽 range: 357 mm         status: range valid     signal: 19.63 MCPS      ambient: 0.05 MCPS
-09:19:40.799 > 〽 range: 359 mm         status: range valid     signal: 19.60 MCPS      ambient: 0.05 MCPS
-09:19:41.075 > 〽 range: 358 mm         status: range valid     signal: 20.00 MCPS      ambient: 0.05 MCPS
-09:19:41.372 > 〽 range: 275 mm         status: wrap target fail        signal: 43.54 MCPS      ambient: 0.05 MCPS
-09:19:41.635 > 〽 range: 0 mm   status: range valid     signal: 299.45 MCPS     ambient: 0.05 MCPS
-09:19:41.928 > 〽 range: 0 mm   status: range valid     signal: 262.31 MCPS     ambient: 0.02 MCPS
+08:39:47.828 > 💡 Firmware Time of Flight Ranger (1.0.0)
+08:39:47.828 > 🔌 Booting into normal mode 🔌
+08:39:48.103 > {} Stored configuration
+08:39:48.105 >   • Hardware device ID: 240ac4594254
+08:39:48.109 >   • Device ID: TOFRanger
+08:39:48.111 >   • Name: Time of Flight Ranger
+08:39:48.114 >   • Device Stats Interval: 300 sec
+08:39:48.117 >   • Wi-Fi: 
+08:39:48.119 >     ◦ SSID: SFNSS1-24G
+08:39:48.121 >     ◦ Password not shown
+08:39:48.123 >   • MQTT: 
+08:39:48.125 >     ◦ Host: openhab.skoona.net
+08:39:48.128 >     ◦ Port: 1883
+08:39:48.129 >     ◦ Base topic: sknSensors/
+08:39:48.132 >     ◦ Auth? yes
+08:39:48.134 >     ◦ Username: openhabian
+08:39:48.136 >     ◦ Password not shown
+08:39:48.139 >   • OTA: 
+08:39:48.140 >     ◦ Enabled? yes
+08:39:48.142 >   • Custom settings: 
+08:39:48.144 >     ◦ duration: 15 (set)
+08:39:48.147 > • Ranging Module:
+08:39:48.153 > 〽 Medium distance mode accepted.
+08:39:48.156 > 〽 200us timing budget accepted.
+08:39:48.159 > ↕ Attempting to connect to Wi-Fi...
+08:39:51.140 > ✔ Wi-Fi connected, IP: 10.100.1.244
+08:39:51.144 > Triggering WIFI_CONNECTED event...
+08:39:51.147 > ↕ Attempting to connect to MQTT...
+08:39:51.181 > Sending initial information...
+08:39:51.238 > ✔ MQTT ready
+08:39:51.240 > Triggering MQTT_READY event...
+08:39:51.243 > 〽 Node: TOF Ranger Ready to operate.
+08:39:51.246 > Calling setup function...
+08:39:51.249 > 〽 Sending statistics...
+08:39:51.251 >   • Interval: 305s (300s including 5s grace time)
+08:39:51.255 >   • Wi-Fi signal quality: 90%
+08:39:51.258 >   • Uptime: 4s
+08:39:51.284 > 📢 Calling broadcast handler...
+08:39:51.287 > Received broadcast level alert: OH3 Offline
+08:39:51.291 > 📢 Calling broadcast handler...
+08:39:51.294 > Received broadcast level LWT: HomieMonitor Offline!
+08:40:08.152 > 〽 Start continuous ranging @ 280 ms accepted.
+08:40:08.378 > 〽 range: 288 mm 	status: range valid	signal: 71.92 MCPS	ambient: 0.10 MCPS
+08:40:08.661 > 〽 range: 297 mm 	status: range valid	signal: 14.41 MCPS	ambient: 0.02 MCPS
+08:40:08.946 > 〽 range: 297 mm 	status: range valid	signal: 14.40 MCPS	ambient: 0.02 MCPS
+08:40:09.211 > 〽 range: 297 mm 	status: range valid	signal: 14.45 MCPS	ambient: 0.02 MCPS
+08:40:09.510 > 〽 range: 298 mm 	status: range valid	signal: 14.51 MCPS	ambient: 0.02 MCPS
+08:40:09.796 > 〽 range: 298 mm 	status: range valid	signal: 14.49 MCPS	ambient: 0.02 MCPS
+08:40:10.059 > 〽 range: 298 mm 	status: range valid	signal: 14.41 MCPS	ambient: 0.02 MCPS
+08:40:10.334 > 〽 range: 297 mm 	status: range valid	signal: 14.44 MCPS	ambient: 0.02 MCPS
+08:40:10.626 > 〽 range: 298 mm 	status: range valid	signal: 14.46 MCPS	ambient: 0.02 MCPS
+08:40:10.894 > 〽 range: 298 mm 	status: range valid	signal: 14.49 MCPS	ambient: 0.02 MCPS
+08:40:11.182 > 〽 range: 298 mm 	status: range valid	signal: 14.46 MCPS	ambient: 0.02 MCPS
+08:40:11.454 > 〽 range: 297 mm 	status: range valid	signal: 14.48 MCPS	ambient: 0.02 MCPS
+08:40:11.734 > 〽 range: 298 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:12.016 > 〽 range: 297 mm 	status: range valid	signal: 14.60 MCPS	ambient: 0.02 MCPS
+08:40:12.292 > 〽 range: 298 mm 	status: range valid	signal: 14.59 MCPS	ambient: 0.02 MCPS
+
+...
+
+08:40:24.897 > 〽 range: 299 mm 	status: range valid	signal: 14.54 MCPS	ambient: 0.02 MCPS
+08:40:25.174 > 〽 range: 299 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:25.450 > 〽 range: 299 mm 	status: range valid	signal: 14.47 MCPS	ambient: 0.02 MCPS
+08:40:25.759 > 〽 range: 299 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:26.020 > 〽 range: 299 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:26.301 > 〽 range: 299 mm 	status: range valid	signal: 14.48 MCPS	ambient: 0.02 MCPS
+08:40:26.575 > 〽 range: 299 mm 	status: range valid	signal: 14.46 MCPS	ambient: 0.03 MCPS
+08:40:26.878 > 〽 range: 299 mm 	status: range valid	signal: 14.51 MCPS	ambient: 0.02 MCPS
+08:40:27.141 > 〽 range: 299 mm 	status: range valid	signal: 14.47 MCPS	ambient: 0.02 MCPS
+08:40:27.416 > 〽 range: 299 mm 	status: range valid	signal: 14.44 MCPS	ambient: 0.02 MCPS
+08:40:27.712 > 〽 range: 298 mm 	status: range valid	signal: 14.59 MCPS	ambient: 0.02 MCPS
+08:40:27.993 > 〽 range: 299 mm 	status: range valid	signal: 14.48 MCPS	ambient: 0.02 MCPS
+08:40:28.150 > 〽 Stopping continuous ranging accepted.
+08:40:48.148 > 〽 Start continuous ranging @ 280 ms accepted.
+08:40:48.374 > 〽 range: 299 mm 	status: range valid	signal: 14.49 MCPS	ambient: 0.02 MCPS
+08:40:48.672 > 〽 range: 298 mm 	status: range valid	signal: 14.44 MCPS	ambient: 0.02 MCPS
+08:40:48.942 > 〽 range: 298 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:49.211 > 〽 range: 298 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:49.495 > 〽 range: 297 mm 	status: range valid	signal: 14.50 MCPS	ambient: 0.02 MCPS
+08:40:49.786 > 〽 range: 298 mm 	status: range valid	signal: 14.57 MCPS	ambient: 0.02 MCPS
+08:40:50.054 > 〽 range: 298 mm 	status: range valid	signal: 14.58 MCPS	ambient: 0.02 MCPS
+08:40:50.349 > 〽 range: 298 mm 	status: range valid	signal: 14.64 MCPS	ambient: 0.02 MCPS
+08:40:50.620 > 〽 range: 297 mm 	status: range valid	signal: 14.51 MCPS	ambient: 0.02 MCPS
 
 ```
