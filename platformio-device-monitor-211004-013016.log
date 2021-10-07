@@ -1,8 +1,0 @@
-01:30:16.771 > rv:0x00,h���0,wp_drv:0x00
-01:30:16.771 > mode:DIO, clock div:2
-01:30:16.771 > load:0x3fff0018,len:4
-01:30:16.771 > load:0x3fff001c,len:1044
-01:30:16.771 > load:0x40078000,len:10124
-01:30:16.771 > load:0x40080400,len:5828
-01:30:16.771 > entry 0x400806a8
-01:30:16.771 > Failed to detect and initialize sensor!

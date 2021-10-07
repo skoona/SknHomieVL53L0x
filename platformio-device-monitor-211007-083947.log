@@ -1,0 +1,569 @@
+08:39:47.828 > 💡 Firmware Time of Flight Ranger (1.0.0)
+08:39:47.828 > 🔌 Booting into normal mode 🔌
+08:39:48.103 > {} Stored configuration
+08:39:48.105 >   • Hardware device ID: 240ac4594254
+08:39:48.109 >   • Device ID: TOFRanger
+08:39:48.111 >   • Name: Time of Flight Ranger
+08:39:48.114 >   • Device Stats Interval: 300 sec
+08:39:48.117 >   • Wi-Fi: 
+08:39:48.119 >     ◦ SSID: SFNSS1-24G
+08:39:48.121 >     ◦ Password not shown
+08:39:48.123 >   • MQTT: 
+08:39:48.125 >     ◦ Host: openhab.skoona.net
+08:39:48.128 >     ◦ Port: 1883
+08:39:48.129 >     ◦ Base topic: sknSensors/
+08:39:48.132 >     ◦ Auth? yes
+08:39:48.134 >     ◦ Username: openhabian
+08:39:48.136 >     ◦ Password not shown
+08:39:48.139 >   • OTA: 
+08:39:48.140 >     ◦ Enabled? yes
+08:39:48.142 >   • Custom settings: 
+08:39:48.144 >     ◦ duration: 15 (set)
+08:39:48.147 > • Ranging Module:
+08:39:48.153 > 〽 Medium distance mode accepted.
+08:39:48.156 > 〽 200us timing budget accepted.
+08:39:48.159 > ↕ Attempting to connect to Wi-Fi...
+08:39:51.140 > ✔ Wi-Fi connected, IP: 10.100.1.244
+08:39:51.144 > Triggering WIFI_CONNECTED event...
+08:39:51.147 > ↕ Attempting to connect to MQTT...
+08:39:51.181 > Sending initial information...
+08:39:51.238 > ✔ MQTT ready
+08:39:51.240 > Triggering MQTT_READY event...
+08:39:51.243 > 〽 Node: TOF Ranger Ready to operate.
+08:39:51.246 > Calling setup function...
+08:39:51.249 > 〽 Sending statistics...
+08:39:51.251 >   • Interval: 305s (300s including 5s grace time)
+08:39:51.255 >   • Wi-Fi signal quality: 90%
+08:39:51.258 >   • Uptime: 4s
+08:39:51.284 > 📢 Calling broadcast handler...
+08:39:51.287 > Received broadcast level alert: OH3 Offline
+08:39:51.291 > 📢 Calling broadcast handler...
+08:39:51.294 > Received broadcast level LWT: HomieMonitor Offline!
+08:40:08.152 > 〽 Start continuous ranging @ 280 ms accepted.
+08:40:08.378 > 〽 range: 288 mm 	status: range valid	signal: 71.92 MCPS	ambient: 0.10 MCPS
+08:40:08.661 > 〽 range: 297 mm 	status: range valid	signal: 14.41 MCPS	ambient: 0.02 MCPS
+08:40:08.946 > 〽 range: 297 mm 	status: range valid	signal: 14.40 MCPS	ambient: 0.02 MCPS
+08:40:09.211 > 〽 range: 297 mm 	status: range valid	signal: 14.45 MCPS	ambient: 0.02 MCPS
+08:40:09.510 > 〽 range: 298 mm 	status: range valid	signal: 14.51 MCPS	ambient: 0.02 MCPS
+08:40:09.796 > 〽 range: 298 mm 	status: range valid	signal: 14.49 MCPS	ambient: 0.02 MCPS
+08:40:10.059 > 〽 range: 298 mm 	status: range valid	signal: 14.41 MCPS	ambient: 0.02 MCPS
+08:40:10.334 > 〽 range: 297 mm 	status: range valid	signal: 14.44 MCPS	ambient: 0.02 MCPS
+08:40:10.626 > 〽 range: 298 mm 	status: range valid	signal: 14.46 MCPS	ambient: 0.02 MCPS
+08:40:10.894 > 〽 range: 298 mm 	status: range valid	signal: 14.49 MCPS	ambient: 0.02 MCPS
+08:40:11.182 > 〽 range: 298 mm 	status: range valid	signal: 14.46 MCPS	ambient: 0.02 MCPS
+08:40:11.454 > 〽 range: 297 mm 	status: range valid	signal: 14.48 MCPS	ambient: 0.02 MCPS
+08:40:11.734 > 〽 range: 298 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:12.016 > 〽 range: 297 mm 	status: range valid	signal: 14.60 MCPS	ambient: 0.02 MCPS
+08:40:12.292 > 〽 range: 298 mm 	status: range valid	signal: 14.59 MCPS	ambient: 0.02 MCPS
+08:40:12.592 > 〽 range: 297 mm 	status: range valid	signal: 14.54 MCPS	ambient: 0.02 MCPS
+08:40:12.857 > 〽 range: 297 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.03 MCPS
+08:40:13.143 > 〽 range: 298 mm 	status: range valid	signal: 14.56 MCPS	ambient: 0.02 MCPS
+08:40:13.433 > 〽 range: 298 mm 	status: range valid	signal: 14.54 MCPS	ambient: 0.02 MCPS
+08:40:13.688 > 〽 range: 297 mm 	status: range valid	signal: 14.50 MCPS	ambient: 0.02 MCPS
+08:40:13.975 > 〽 range: 298 mm 	status: range valid	signal: 14.49 MCPS	ambient: 0.02 MCPS
+08:40:14.287 > 〽 range: 298 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:14.539 > 〽 range: 298 mm 	status: range valid	signal: 14.59 MCPS	ambient: 0.02 MCPS
+08:40:14.829 > 〽 range: 298 mm 	status: range valid	signal: 14.59 MCPS	ambient: 0.02 MCPS
+08:40:15.119 > 〽 range: 298 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:15.396 > 〽 range: 298 mm 	status: range valid	signal: 14.49 MCPS	ambient: 0.02 MCPS
+08:40:15.678 > 〽 range: 299 mm 	status: range valid	signal: 14.45 MCPS	ambient: 0.02 MCPS
+08:40:15.934 > 〽 range: 299 mm 	status: range valid	signal: 14.48 MCPS	ambient: 0.02 MCPS
+08:40:16.209 > 〽 range: 298 mm 	status: range valid	signal: 14.45 MCPS	ambient: 0.02 MCPS
+08:40:16.494 > 〽 range: 299 mm 	status: range valid	signal: 14.53 MCPS	ambient: 0.02 MCPS
+08:40:16.777 > 〽 range: 298 mm 	status: range valid	signal: 14.44 MCPS	ambient: 0.02 MCPS
+08:40:17.050 > 〽 range: 298 mm 	status: range valid	signal: 14.48 MCPS	ambient: 0.03 MCPS
+08:40:17.326 > 〽 range: 299 mm 	status: range valid	signal: 14.53 MCPS	ambient: 0.02 MCPS
+08:40:17.642 > 〽 range: 298 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:17.893 > 〽 range: 298 mm 	status: range valid	signal: 14.54 MCPS	ambient: 0.02 MCPS
+08:40:18.178 > 〽 range: 299 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:18.453 > 〽 range: 298 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:18.753 > 〽 range: 299 mm 	status: range valid	signal: 14.48 MCPS	ambient: 0.02 MCPS
+08:40:19.017 > 〽 range: 299 mm 	status: range valid	signal: 14.54 MCPS	ambient: 0.02 MCPS
+08:40:19.299 > 〽 range: 299 mm 	status: range valid	signal: 14.50 MCPS	ambient: 0.02 MCPS
+08:40:19.580 > 〽 range: 298 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:19.850 > 〽 range: 299 mm 	status: range valid	signal: 14.54 MCPS	ambient: 0.02 MCPS
+08:40:20.155 > 〽 range: 299 mm 	status: range valid	signal: 14.56 MCPS	ambient: 0.02 MCPS
+08:40:20.431 > 〽 range: 299 mm 	status: range valid	signal: 14.51 MCPS	ambient: 0.02 MCPS
+08:40:20.701 > 〽 range: 299 mm 	status: range valid	signal: 14.49 MCPS	ambient: 0.02 MCPS
+08:40:20.997 > 〽 range: 299 mm 	status: range valid	signal: 14.54 MCPS	ambient: 0.02 MCPS
+08:40:21.278 > 〽 range: 299 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:21.541 > 〽 range: 299 mm 	status: range valid	signal: 14.48 MCPS	ambient: 0.02 MCPS
+08:40:21.821 > 〽 range: 299 mm 	status: range valid	signal: 14.57 MCPS	ambient: 0.02 MCPS
+08:40:22.097 > 〽 range: 299 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:22.378 > 〽 range: 299 mm 	status: range valid	signal: 14.53 MCPS	ambient: 0.02 MCPS
+08:40:22.659 > 〽 range: 299 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:22.957 > 〽 range: 299 mm 	status: range valid	signal: 14.50 MCPS	ambient: 0.02 MCPS
+08:40:23.233 > 〽 range: 299 mm 	status: range valid	signal: 14.49 MCPS	ambient: 0.02 MCPS
+08:40:23.499 > 〽 range: 299 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:23.797 > 〽 range: 299 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:24.056 > 〽 range: 299 mm 	status: range valid	signal: 14.48 MCPS	ambient: 0.02 MCPS
+08:40:24.326 > 〽 range: 298 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:24.612 > 〽 range: 299 mm 	status: range valid	signal: 14.49 MCPS	ambient: 0.02 MCPS
+08:40:24.897 > 〽 range: 299 mm 	status: range valid	signal: 14.54 MCPS	ambient: 0.02 MCPS
+08:40:25.174 > 〽 range: 299 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:25.450 > 〽 range: 299 mm 	status: range valid	signal: 14.47 MCPS	ambient: 0.02 MCPS
+08:40:25.759 > 〽 range: 299 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:26.020 > 〽 range: 299 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:26.301 > 〽 range: 299 mm 	status: range valid	signal: 14.48 MCPS	ambient: 0.02 MCPS
+08:40:26.575 > 〽 range: 299 mm 	status: range valid	signal: 14.46 MCPS	ambient: 0.03 MCPS
+08:40:26.878 > 〽 range: 299 mm 	status: range valid	signal: 14.51 MCPS	ambient: 0.02 MCPS
+08:40:27.141 > 〽 range: 299 mm 	status: range valid	signal: 14.47 MCPS	ambient: 0.02 MCPS
+08:40:27.416 > 〽 range: 299 mm 	status: range valid	signal: 14.44 MCPS	ambient: 0.02 MCPS
+08:40:27.712 > 〽 range: 298 mm 	status: range valid	signal: 14.59 MCPS	ambient: 0.02 MCPS
+08:40:27.993 > 〽 range: 299 mm 	status: range valid	signal: 14.48 MCPS	ambient: 0.02 MCPS
+08:40:28.150 > 〽 Stopping continuous ranging accepted.
+08:40:48.148 > 〽 Start continuous ranging @ 280 ms accepted.
+08:40:48.374 > 〽 range: 299 mm 	status: range valid	signal: 14.49 MCPS	ambient: 0.02 MCPS
+08:40:48.672 > 〽 range: 298 mm 	status: range valid	signal: 14.44 MCPS	ambient: 0.02 MCPS
+08:40:48.942 > 〽 range: 298 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:49.211 > 〽 range: 298 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:49.495 > 〽 range: 297 mm 	status: range valid	signal: 14.50 MCPS	ambient: 0.02 MCPS
+08:40:49.786 > 〽 range: 298 mm 	status: range valid	signal: 14.57 MCPS	ambient: 0.02 MCPS
+08:40:50.054 > 〽 range: 298 mm 	status: range valid	signal: 14.58 MCPS	ambient: 0.02 MCPS
+08:40:50.349 > 〽 range: 298 mm 	status: range valid	signal: 14.64 MCPS	ambient: 0.02 MCPS
+08:40:50.620 > 〽 range: 297 mm 	status: range valid	signal: 14.51 MCPS	ambient: 0.02 MCPS
+08:40:50.911 > 〽 range: 298 mm 	status: range valid	signal: 14.61 MCPS	ambient: 0.02 MCPS
+08:40:51.182 > 〽 range: 298 mm 	status: range valid	signal: 14.57 MCPS	ambient: 0.02 MCPS
+08:40:51.454 > 〽 range: 298 mm 	status: range valid	signal: 14.56 MCPS	ambient: 0.02 MCPS
+08:40:51.735 > 〽 range: 296 mm 	status: range valid	signal: 14.63 MCPS	ambient: 0.02 MCPS
+08:40:52.031 > 〽 range: 298 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:52.307 > 〽 range: 297 mm 	status: range valid	signal: 14.58 MCPS	ambient: 0.02 MCPS
+08:40:52.592 > 〽 range: 298 mm 	status: range valid	signal: 14.53 MCPS	ambient: 0.02 MCPS
+08:40:52.858 > 〽 range: 299 mm 	status: range valid	signal: 14.59 MCPS	ambient: 0.02 MCPS
+08:40:53.130 > 〽 range: 298 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.03 MCPS
+08:40:53.430 > 〽 range: 299 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:53.715 > 〽 range: 299 mm 	status: range valid	signal: 14.60 MCPS	ambient: 0.02 MCPS
+08:40:53.978 > 〽 range: 298 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:54.254 > 〽 range: 297 mm 	status: range valid	signal: 14.53 MCPS	ambient: 0.02 MCPS
+08:40:54.531 > 〽 range: 299 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:54.803 > 〽 range: 299 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.03 MCPS
+08:40:55.090 > 〽 range: 299 mm 	status: range valid	signal: 14.53 MCPS	ambient: 0.02 MCPS
+08:40:55.379 > 〽 range: 298 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:55.649 > 〽 range: 298 mm 	status: range valid	signal: 14.58 MCPS	ambient: 0.02 MCPS
+08:40:55.953 > 〽 range: 298 mm 	status: range valid	signal: 14.58 MCPS	ambient: 0.02 MCPS
+08:40:56.203 > 〽 range: 298 mm 	status: range valid	signal: 14.49 MCPS	ambient: 0.02 MCPS
+08:40:56.489 > 〽 range: 299 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:56.778 > 〽 range: 297 mm 	status: range valid	signal: 14.45 MCPS	ambient: 0.02 MCPS
+08:40:57.054 > 〽 range: 299 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:57.336 > 〽 range: 298 mm 	status: range valid	signal: 14.57 MCPS	ambient: 0.02 MCPS
+08:40:57.619 > 〽 range: 299 mm 	status: range valid	signal: 14.56 MCPS	ambient: 0.02 MCPS
+08:40:57.889 > 〽 range: 299 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:58.178 > 〽 range: 298 mm 	status: range valid	signal: 14.56 MCPS	ambient: 0.02 MCPS
+08:40:58.473 > 〽 range: 299 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:58.749 > 〽 range: 299 mm 	status: range valid	signal: 14.53 MCPS	ambient: 0.02 MCPS
+08:40:59.030 > 〽 range: 299 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:59.289 > 〽 range: 298 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:40:59.573 > 〽 range: 299 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:40:59.863 > 〽 range: 299 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:41:00.150 > 〽 range: 299 mm 	status: range valid	signal: 14.53 MCPS	ambient: 0.02 MCPS
+08:41:00.421 > 〽 range: 298 mm 	status: range valid	signal: 14.54 MCPS	ambient: 0.02 MCPS
+08:41:00.704 > 〽 range: 298 mm 	status: range valid	signal: 14.54 MCPS	ambient: 0.02 MCPS
+08:41:00.993 > 〽 range: 298 mm 	status: range valid	signal: 14.53 MCPS	ambient: 0.02 MCPS
+08:41:01.275 > 〽 range: 298 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:41:01.545 > 〽 range: 299 mm 	status: range valid	signal: 14.50 MCPS	ambient: 0.02 MCPS
+08:41:01.832 > 〽 range: 299 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:41:02.113 > 〽 range: 299 mm 	status: range valid	signal: 14.57 MCPS	ambient: 0.03 MCPS
+08:41:02.395 > 〽 range: 299 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:41:02.650 > 〽 range: 299 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:41:02.928 > 〽 range: 299 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.02 MCPS
+08:41:03.230 > 〽 range: 299 mm 	status: range valid	signal: 14.52 MCPS	ambient: 0.03 MCPS
+08:41:03.510 > 〽 range: 299 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:41:03.768 > 〽 range: 299 mm 	status: range valid	signal: 14.60 MCPS	ambient: 0.02 MCPS
+08:41:04.065 > 〽 range: 298 mm 	status: range valid	signal: 14.51 MCPS	ambient: 0.02 MCPS
+08:41:04.325 > 〽 range: 299 mm 	status: range valid	signal: 14.56 MCPS	ambient: 0.02 MCPS
+08:41:04.609 > 〽 range: 299 mm 	status: range valid	signal: 14.56 MCPS	ambient: 0.02 MCPS
+08:41:04.893 > 〽 range: 299 mm 	status: range valid	signal: 14.54 MCPS	ambient: 0.02 MCPS
+08:41:05.170 > 〽 range: 299 mm 	status: range valid	signal: 14.58 MCPS	ambient: 0.02 MCPS
+08:41:05.446 > 〽 range: 299 mm 	status: range valid	signal: 14.56 MCPS	ambient: 0.02 MCPS
+08:41:05.745 > 〽 range: 299 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:41:06.032 > 〽 range: 299 mm 	status: range valid	signal: 14.59 MCPS	ambient: 0.02 MCPS
+08:41:06.312 > 〽 range: 298 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:41:06.579 > 〽 range: 297 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:41:06.848 > 〽 range: 298 mm 	status: range valid	signal: 14.53 MCPS	ambient: 0.02 MCPS
+08:41:07.152 > 〽 range: 299 mm 	status: range valid	signal: 14.55 MCPS	ambient: 0.02 MCPS
+08:41:07.430 > 〽 range: 296 mm 	status: range valid	signal: 14.79 MCPS	ambient: 0.03 MCPS
+08:41:07.692 > 〽 range: 281 mm 	status: range valid	signal: 15.60 MCPS	ambient: 0.02 MCPS
+08:41:07.986 > 〽 range: 321 mm 	status: range valid	signal: 12.37 MCPS	ambient: 0.02 MCPS
+08:41:08.146 > 〽 Stopping continuous ranging accepted.
+08:41:28.144 > 〽 Start continuous ranging @ 280 ms accepted.
+08:41:28.375 > 〽 range: 0 mm 	status: range valid	signal: 279.27 MCPS	ambient: 0.04 MCPS
+08:41:28.657 > 〽 range: 44 mm 	status: range valid	signal: 42.65 MCPS	ambient: 0.01 MCPS
+08:41:28.926 > 〽 range: 39 mm 	status: range valid	signal: 19.94 MCPS	ambient: 0.00 MCPS
+08:41:29.218 > 〽 range: 48 mm 	status: range valid	signal: 20.68 MCPS	ambient: 0.00 MCPS
+08:41:29.492 > 〽 range: 48 mm 	status: range valid	signal: 20.66 MCPS	ambient: 0.00 MCPS
+08:41:29.780 > 〽 range: 37 mm 	status: range valid	signal: 19.63 MCPS	ambient: 0.00 MCPS
+08:41:30.062 > 〽 range: 38 mm 	status: range valid	signal: 19.77 MCPS	ambient: 0.00 MCPS
+08:41:30.335 > 〽 range: 50 mm 	status: range valid	signal: 21.20 MCPS	ambient: 0.00 MCPS
+08:41:30.629 > 〽 range: 50 mm 	status: range valid	signal: 21.11 MCPS	ambient: 0.00 MCPS
+08:41:30.906 > 〽 range: 37 mm 	status: range valid	signal: 19.78 MCPS	ambient: 0.00 MCPS
+08:41:31.185 > 〽 range: 37 mm 	status: range valid	signal: 19.73 MCPS	ambient: 0.00 MCPS
+08:41:31.442 > 〽 range: 51 mm 	status: range valid	signal: 20.96 MCPS	ambient: 0.00 MCPS
+08:41:31.727 > 〽 range: 36 mm 	status: range valid	signal: 19.87 MCPS	ambient: 0.00 MCPS
+08:41:32.002 > 〽 range: 50 mm 	status: range valid	signal: 20.92 MCPS	ambient: 0.00 MCPS
+08:41:32.283 > 〽 range: 37 mm 	status: range valid	signal: 19.61 MCPS	ambient: 0.00 MCPS
+08:41:32.587 > 〽 range: 50 mm 	status: range valid	signal: 21.19 MCPS	ambient: 0.00 MCPS
+08:41:32.845 > 〽 range: 50 mm 	status: range valid	signal: 21.09 MCPS	ambient: 0.00 MCPS
+08:41:33.150 > 〽 range: 37 mm 	status: range valid	signal: 19.82 MCPS	ambient: 0.00 MCPS
+08:41:33.418 > 〽 range: 38 mm 	status: range valid	signal: 19.80 MCPS	ambient: 0.00 MCPS
+08:41:33.708 > 〽 range: 49 mm 	status: range valid	signal: 21.00 MCPS	ambient: 0.00 MCPS
+08:41:33.978 > 〽 range: 50 mm 	status: range valid	signal: 21.17 MCPS	ambient: 0.00 MCPS
+08:41:34.265 > 〽 range: 37 mm 	status: range valid	signal: 19.98 MCPS	ambient: 0.00 MCPS
+08:41:34.541 > 〽 range: 36 mm 	status: range valid	signal: 20.16 MCPS	ambient: 0.00 MCPS
+08:41:34.804 > 〽 range: 50 mm 	status: range valid	signal: 21.40 MCPS	ambient: 0.00 MCPS
+08:41:35.087 > 〽 range: 37 mm 	status: range valid	signal: 20.26 MCPS	ambient: 0.00 MCPS
+08:41:35.373 > 〽 range: 37 mm 	status: range valid	signal: 20.14 MCPS	ambient: 0.00 MCPS
+08:41:35.651 > 〽 range: 36 mm 	status: range valid	signal: 20.16 MCPS	ambient: 0.00 MCPS
+08:41:35.933 > 〽 range: 38 mm 	status: range valid	signal: 20.27 MCPS	ambient: 0.00 MCPS
+08:41:36.218 > 〽 range: 37 mm 	status: range valid	signal: 20.23 MCPS	ambient: 0.00 MCPS
+08:41:36.485 > 〽 range: 36 mm 	status: range valid	signal: 20.20 MCPS	ambient: 0.00 MCPS
+08:41:36.784 > 〽 range: 37 mm 	status: range valid	signal: 20.12 MCPS	ambient: 0.00 MCPS
+08:41:37.048 > 〽 range: 38 mm 	status: range valid	signal: 20.12 MCPS	ambient: 0.00 MCPS
+08:41:37.324 > 〽 range: 37 mm 	status: range valid	signal: 20.05 MCPS	ambient: 0.00 MCPS
+08:41:37.607 > 〽 range: 37 mm 	status: range valid	signal: 20.16 MCPS	ambient: 0.00 MCPS
+08:41:37.886 > 〽 range: 36 mm 	status: range valid	signal: 20.16 MCPS	ambient: 0.00 MCPS
+08:41:38.176 > 〽 range: 37 mm 	status: range valid	signal: 20.17 MCPS	ambient: 0.00 MCPS
+08:41:38.473 > 〽 range: 37 mm 	status: range valid	signal: 20.35 MCPS	ambient: 0.00 MCPS
+08:41:38.725 > 〽 range: 36 mm 	status: range valid	signal: 20.34 MCPS	ambient: 0.00 MCPS
+08:41:39.000 > 〽 range: 36 mm 	status: range valid	signal: 20.41 MCPS	ambient: 0.00 MCPS
+08:41:39.286 > 〽 range: 36 mm 	status: range valid	signal: 20.52 MCPS	ambient: 0.00 MCPS
+08:41:39.588 > 〽 range: 37 mm 	status: range valid	signal: 20.75 MCPS	ambient: 0.00 MCPS
+08:41:39.864 > 〽 range: 36 mm 	status: range valid	signal: 20.70 MCPS	ambient: 0.00 MCPS
+08:41:40.126 > 〽 range: 36 mm 	status: range valid	signal: 20.70 MCPS	ambient: 0.00 MCPS
+08:41:40.402 > 〽 range: 36 mm 	status: range valid	signal: 20.66 MCPS	ambient: 0.00 MCPS
+08:41:40.703 > 〽 range: 37 mm 	status: range valid	signal: 20.70 MCPS	ambient: 0.00 MCPS
+08:41:40.987 > 〽 range: 37 mm 	status: range valid	signal: 20.68 MCPS	ambient: 0.00 MCPS
+08:41:41.266 > 〽 range: 36 mm 	status: range valid	signal: 20.64 MCPS	ambient: 0.00 MCPS
+08:41:41.533 > 〽 range: 37 mm 	status: range valid	signal: 20.67 MCPS	ambient: 0.00 MCPS
+08:41:41.816 > 〽 range: 38 mm 	status: range valid	signal: 20.56 MCPS	ambient: 0.00 MCPS
+08:41:42.099 > 〽 range: 37 mm 	status: range valid	signal: 20.54 MCPS	ambient: 0.00 MCPS
+08:41:42.366 > 〽 range: 37 mm 	status: range valid	signal: 20.46 MCPS	ambient: 0.00 MCPS
+08:41:42.655 > 〽 range: 38 mm 	status: range valid	signal: 20.44 MCPS	ambient: 0.00 MCPS
+08:41:42.946 > 〽 range: 37 mm 	status: range valid	signal: 20.45 MCPS	ambient: 0.00 MCPS
+08:41:43.198 > 〽 range: 38 mm 	status: range valid	signal: 20.52 MCPS	ambient: 0.00 MCPS
+08:41:43.483 > 〽 range: 37 mm 	status: range valid	signal: 20.71 MCPS	ambient: 0.00 MCPS
+08:41:43.773 > 〽 range: 37 mm 	status: range valid	signal: 20.62 MCPS	ambient: 0.00 MCPS
+08:41:44.040 > 〽 range: 37 mm 	status: range valid	signal: 20.69 MCPS	ambient: 0.00 MCPS
+08:41:44.325 > 〽 range: 37 mm 	status: range valid	signal: 20.61 MCPS	ambient: 0.00 MCPS
+08:41:44.617 > 〽 range: 36 mm 	status: range valid	signal: 20.77 MCPS	ambient: 0.00 MCPS
+08:41:44.888 > 〽 range: 37 mm 	status: range valid	signal: 20.75 MCPS	ambient: 0.00 MCPS
+08:41:45.177 > 〽 range: 38 mm 	status: range valid	signal: 20.70 MCPS	ambient: 0.00 MCPS
+08:41:45.463 > 〽 range: 36 mm 	status: range valid	signal: 20.84 MCPS	ambient: 0.00 MCPS
+08:41:45.737 > 〽 range: 38 mm 	status: range valid	signal: 20.91 MCPS	ambient: 0.00 MCPS
+08:41:46.004 > 〽 range: 37 mm 	status: range valid	signal: 20.80 MCPS	ambient: 0.00 MCPS
+08:41:46.307 > 〽 range: 37 mm 	status: range valid	signal: 20.68 MCPS	ambient: 0.00 MCPS
+08:41:46.573 > 〽 range: 37 mm 	status: range valid	signal: 20.74 MCPS	ambient: 0.00 MCPS
+08:41:46.856 > 〽 range: 38 mm 	status: range valid	signal: 20.76 MCPS	ambient: 0.00 MCPS
+08:41:47.132 > 〽 range: 38 mm 	status: range valid	signal: 20.82 MCPS	ambient: 0.00 MCPS
+08:41:47.406 > 〽 range: 38 mm 	status: range valid	signal: 20.73 MCPS	ambient: 0.00 MCPS
+08:41:47.696 > 〽 range: 38 mm 	status: range valid	signal: 20.84 MCPS	ambient: 0.00 MCPS
+08:41:47.964 > 〽 range: 39 mm 	status: range valid	signal: 20.91 MCPS	ambient: 0.00 MCPS
+08:41:48.142 > 〽 Stopping continuous ranging accepted.
+08:42:08.139 > 〽 Start continuous ranging @ 280 ms accepted.
+08:42:08.266 > 〽 range: 303 mm 	status: signal fail	signal: 0.55 MCPS	ambient: 0.00 MCPS
+08:42:08.623 > 〽 range: 297 mm 	status: range valid	signal: 23.38 MCPS	ambient: 0.05 MCPS
+08:42:08.894 > 〽 range: 305 mm 	status: range valid	signal: 12.94 MCPS	ambient: 0.03 MCPS
+08:42:09.171 > 〽 range: 305 mm 	status: range valid	signal: 13.04 MCPS	ambient: 0.02 MCPS
+08:42:09.452 > 〽 range: 304 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.02 MCPS
+08:42:09.735 > 〽 range: 305 mm 	status: range valid	signal: 12.99 MCPS	ambient: 0.02 MCPS
+08:42:10.025 > 〽 range: 304 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.02 MCPS
+08:42:10.303 > 〽 range: 305 mm 	status: range valid	signal: 13.01 MCPS	ambient: 0.02 MCPS
+08:42:10.571 > 〽 range: 305 mm 	status: range valid	signal: 12.97 MCPS	ambient: 0.03 MCPS
+08:42:10.860 > 〽 range: 305 mm 	status: range valid	signal: 12.98 MCPS	ambient: 0.02 MCPS
+08:42:11.130 > 〽 range: 305 mm 	status: range valid	signal: 12.94 MCPS	ambient: 0.03 MCPS
+08:42:11.419 > 〽 range: 306 mm 	status: range valid	signal: 12.99 MCPS	ambient: 0.02 MCPS
+08:42:11.684 > 〽 range: 305 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.02 MCPS
+08:42:11.973 > 〽 range: 304 mm 	status: range valid	signal: 12.98 MCPS	ambient: 0.02 MCPS
+08:42:12.254 > 〽 range: 305 mm 	status: range valid	signal: 12.95 MCPS	ambient: 0.03 MCPS
+08:42:12.531 > 〽 range: 305 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.02 MCPS
+08:42:12.827 > 〽 range: 304 mm 	status: range valid	signal: 12.97 MCPS	ambient: 0.02 MCPS
+08:42:13.094 > 〽 range: 304 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.02 MCPS
+08:42:13.378 > 〽 range: 303 mm 	status: range valid	signal: 12.98 MCPS	ambient: 0.03 MCPS
+08:42:13.667 > 〽 range: 303 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:42:13.930 > 〽 range: 303 mm 	status: range valid	signal: 12.96 MCPS	ambient: 0.03 MCPS
+08:42:14.208 > 〽 range: 304 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.02 MCPS
+08:42:14.491 > 〽 range: 304 mm 	status: range valid	signal: 13.03 MCPS	ambient: 0.02 MCPS
+08:42:14.787 > 〽 range: 304 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:42:15.060 > 〽 range: 303 mm 	status: range valid	signal: 13.04 MCPS	ambient: 0.02 MCPS
+08:42:15.345 > 〽 range: 304 mm 	status: range valid	signal: 13.00 MCPS	ambient: 0.02 MCPS
+08:42:15.607 > 〽 range: 304 mm 	status: range valid	signal: 13.01 MCPS	ambient: 0.02 MCPS
+08:42:15.900 > 〽 range: 305 mm 	status: range valid	signal: 13.03 MCPS	ambient: 0.02 MCPS
+08:42:16.169 > 〽 range: 304 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.02 MCPS
+08:42:16.445 > 〽 range: 302 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.02 MCPS
+08:42:16.731 > 〽 range: 304 mm 	status: range valid	signal: 13.00 MCPS	ambient: 0.03 MCPS
+08:42:17.018 > 〽 range: 304 mm 	status: range valid	signal: 12.99 MCPS	ambient: 0.02 MCPS
+08:42:17.301 > 〽 range: 304 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:42:17.593 > 〽 range: 303 mm 	status: range valid	signal: 13.01 MCPS	ambient: 0.03 MCPS
+08:42:17.845 > 〽 range: 304 mm 	status: range valid	signal: 12.97 MCPS	ambient: 0.03 MCPS
+08:42:18.128 > 〽 range: 304 mm 	status: range valid	signal: 12.99 MCPS	ambient: 0.03 MCPS
+08:42:18.430 > 〽 range: 303 mm 	status: range valid	signal: 13.01 MCPS	ambient: 0.02 MCPS
+08:42:18.698 > 〽 range: 304 mm 	status: range valid	signal: 13.00 MCPS	ambient: 0.02 MCPS
+08:42:18.993 > 〽 range: 304 mm 	status: range valid	signal: 13.04 MCPS	ambient: 0.02 MCPS
+08:42:19.270 > 〽 range: 306 mm 	status: range valid	signal: 12.95 MCPS	ambient: 0.03 MCPS
+08:42:19.541 > 〽 range: 303 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.02 MCPS
+08:42:19.825 > 〽 range: 304 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:42:20.098 > 〽 range: 305 mm 	status: range valid	signal: 12.94 MCPS	ambient: 0.03 MCPS
+08:42:20.393 > 〽 range: 304 mm 	status: range valid	signal: 12.96 MCPS	ambient: 0.03 MCPS
+08:42:20.674 > 〽 range: 304 mm 	status: range valid	signal: 13.01 MCPS	ambient: 0.02 MCPS
+08:42:20.943 > 〽 range: 304 mm 	status: range valid	signal: 12.95 MCPS	ambient: 0.02 MCPS
+08:42:21.231 > 〽 range: 305 mm 	status: range valid	signal: 12.96 MCPS	ambient: 0.03 MCPS
+08:42:21.483 > 〽 range: 304 mm 	status: range valid	signal: 12.94 MCPS	ambient: 0.03 MCPS
+08:42:21.770 > 〽 range: 305 mm 	status: range valid	signal: 13.09 MCPS	ambient: 0.03 MCPS
+08:42:22.046 > 〽 range: 305 mm 	status: range valid	signal: 12.99 MCPS	ambient: 0.03 MCPS
+08:42:22.330 > 〽 range: 304 mm 	status: range valid	signal: 13.01 MCPS	ambient: 0.03 MCPS
+08:42:22.618 > 〽 range: 304 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:42:22.912 > 〽 range: 305 mm 	status: range valid	signal: 13.01 MCPS	ambient: 0.03 MCPS
+08:42:23.173 > 〽 range: 303 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.02 MCPS
+08:42:23.446 > 〽 range: 305 mm 	status: range valid	signal: 13.00 MCPS	ambient: 0.02 MCPS
+08:42:23.737 > 〽 range: 304 mm 	status: range valid	signal: 13.01 MCPS	ambient: 0.02 MCPS
+08:42:24.030 > 〽 range: 305 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.02 MCPS
+08:42:24.289 > 〽 range: 305 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.02 MCPS
+08:42:24.585 > 〽 range: 304 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.02 MCPS
+08:42:24.872 > 〽 range: 304 mm 	status: range valid	signal: 12.91 MCPS	ambient: 0.03 MCPS
+08:42:25.149 > 〽 range: 305 mm 	status: range valid	signal: 13.03 MCPS	ambient: 0.03 MCPS
+08:42:25.425 > 〽 range: 305 mm 	status: range valid	signal: 12.95 MCPS	ambient: 0.03 MCPS
+08:42:25.689 > 〽 range: 306 mm 	status: range valid	signal: 13.03 MCPS	ambient: 0.02 MCPS
+08:42:26.009 > 〽 range: 304 mm 	status: range valid	signal: 13.00 MCPS	ambient: 0.03 MCPS
+08:42:26.241 > 〽 range: 305 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.03 MCPS
+08:42:26.527 > 〽 range: 305 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:42:26.817 > 〽 range: 305 mm 	status: range valid	signal: 12.96 MCPS	ambient: 0.03 MCPS
+08:42:27.090 > 〽 range: 305 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.03 MCPS
+08:42:27.370 > 〽 range: 306 mm 	status: range valid	signal: 12.91 MCPS	ambient: 0.03 MCPS
+08:42:27.658 > 〽 range: 305 mm 	status: range valid	signal: 12.98 MCPS	ambient: 0.03 MCPS
+08:42:27.941 > 〽 range: 306 mm 	status: range valid	signal: 13.07 MCPS	ambient: 0.03 MCPS
+08:42:28.138 > 〽 Stopping continuous ranging accepted.
+08:42:48.135 > 〽 Start continuous ranging @ 280 ms accepted.
+08:42:48.360 > 〽 range: 306 mm 	status: range valid	signal: 12.91 MCPS	ambient: 0.02 MCPS
+08:42:48.658 > 〽 range: 306 mm 	status: range valid	signal: 12.86 MCPS	ambient: 0.02 MCPS
+08:42:48.937 > 〽 range: 304 mm 	status: range valid	signal: 12.86 MCPS	ambient: 0.02 MCPS
+08:42:49.209 > 〽 range: 305 mm 	status: range valid	signal: 12.90 MCPS	ambient: 0.03 MCPS
+08:42:49.485 > 〽 range: 306 mm 	status: range valid	signal: 12.87 MCPS	ambient: 0.04 MCPS
+08:42:49.756 > 〽 range: 306 mm 	status: range valid	signal: 12.88 MCPS	ambient: 0.03 MCPS
+08:42:50.045 > 〽 range: 305 mm 	status: range valid	signal: 12.86 MCPS	ambient: 0.02 MCPS
+08:42:50.310 > 〽 range: 305 mm 	status: range valid	signal: 13.04 MCPS	ambient: 0.02 MCPS
+08:42:50.597 > 〽 range: 305 mm 	status: range valid	signal: 12.92 MCPS	ambient: 0.03 MCPS
+08:42:50.882 > 〽 range: 306 mm 	status: range valid	signal: 12.88 MCPS	ambient: 0.02 MCPS
+08:42:51.159 > 〽 range: 305 mm 	status: range valid	signal: 12.84 MCPS	ambient: 0.03 MCPS
+08:42:51.438 > 〽 range: 305 mm 	status: range valid	signal: 12.86 MCPS	ambient: 0.03 MCPS
+08:42:51.717 > 〽 range: 306 mm 	status: range valid	signal: 12.86 MCPS	ambient: 0.02 MCPS
+08:42:52.010 > 〽 range: 307 mm 	status: range valid	signal: 12.89 MCPS	ambient: 0.03 MCPS
+08:42:52.279 > 〽 range: 306 mm 	status: range valid	signal: 12.81 MCPS	ambient: 0.03 MCPS
+08:42:52.559 > 〽 range: 305 mm 	status: range valid	signal: 12.97 MCPS	ambient: 0.02 MCPS
+08:42:52.834 > 〽 range: 306 mm 	status: range valid	signal: 12.85 MCPS	ambient: 0.02 MCPS
+08:42:53.127 > 〽 range: 306 mm 	status: range valid	signal: 12.83 MCPS	ambient: 0.02 MCPS
+08:42:53.423 > 〽 range: 306 mm 	status: range valid	signal: 12.89 MCPS	ambient: 0.03 MCPS
+08:42:53.685 > 〽 range: 307 mm 	status: range valid	signal: 12.88 MCPS	ambient: 0.02 MCPS
+08:42:53.981 > 〽 range: 306 mm 	status: range valid	signal: 12.84 MCPS	ambient: 0.03 MCPS
+08:42:54.253 > 〽 range: 306 mm 	status: range valid	signal: 12.88 MCPS	ambient: 0.03 MCPS
+08:42:54.517 > 〽 range: 306 mm 	status: range valid	signal: 12.82 MCPS	ambient: 0.03 MCPS
+08:42:54.797 > 〽 range: 306 mm 	status: range valid	signal: 12.86 MCPS	ambient: 0.03 MCPS
+08:42:55.086 > 〽 range: 306 mm 	status: range valid	signal: 12.91 MCPS	ambient: 0.02 MCPS
+08:42:55.356 > 〽 range: 306 mm 	status: range valid	signal: 12.80 MCPS	ambient: 0.03 MCPS
+08:42:55.630 > 〽 range: 306 mm 	status: range valid	signal: 12.88 MCPS	ambient: 0.03 MCPS
+08:42:55.917 > 〽 range: 305 mm 	status: range valid	signal: 12.87 MCPS	ambient: 0.03 MCPS
+08:42:56.205 > 〽 range: 307 mm 	status: range valid	signal: 12.80 MCPS	ambient: 0.02 MCPS
+08:42:56.472 > 〽 range: 305 mm 	status: range valid	signal: 12.83 MCPS	ambient: 0.03 MCPS
+08:42:56.757 > 〽 range: 306 mm 	status: range valid	signal: 12.88 MCPS	ambient: 0.03 MCPS
+08:42:57.060 > 〽 range: 307 mm 	status: range valid	signal: 12.84 MCPS	ambient: 0.02 MCPS
+08:42:57.332 > 〽 range: 307 mm 	status: range valid	signal: 12.91 MCPS	ambient: 0.03 MCPS
+08:42:57.599 > 〽 range: 305 mm 	status: range valid	signal: 12.80 MCPS	ambient: 0.03 MCPS
+08:42:57.901 > 〽 range: 306 mm 	status: range valid	signal: 12.92 MCPS	ambient: 0.02 MCPS
+08:42:58.154 > 〽 range: 306 mm 	status: range valid	signal: 12.77 MCPS	ambient: 0.03 MCPS
+08:42:58.450 > 〽 range: 306 mm 	status: range valid	signal: 12.90 MCPS	ambient: 0.03 MCPS
+08:42:58.742 > 〽 range: 307 mm 	status: range valid	signal: 12.80 MCPS	ambient: 0.03 MCPS
+08:42:59.008 > 〽 range: 306 mm 	status: range valid	signal: 12.91 MCPS	ambient: 0.03 MCPS
+08:42:59.281 > 〽 range: 306 mm 	status: range valid	signal: 12.91 MCPS	ambient: 0.02 MCPS
+08:42:59.556 > 〽 range: 307 mm 	status: range valid	signal: 12.84 MCPS	ambient: 0.03 MCPS
+08:42:59.855 > 〽 range: 306 mm 	status: range valid	signal: 12.82 MCPS	ambient: 0.03 MCPS
+08:43:00.121 > 〽 range: 306 mm 	status: range valid	signal: 12.89 MCPS	ambient: 0.03 MCPS
+08:43:00.404 > 〽 range: 307 mm 	status: range valid	signal: 12.93 MCPS	ambient: 0.02 MCPS
+08:43:00.676 > 〽 range: 307 mm 	status: range valid	signal: 12.88 MCPS	ambient: 0.02 MCPS
+08:43:00.954 > 〽 range: 307 mm 	status: range valid	signal: 12.90 MCPS	ambient: 0.03 MCPS
+08:43:01.237 > 〽 range: 307 mm 	status: range valid	signal: 12.86 MCPS	ambient: 0.03 MCPS
+08:43:01.537 > 〽 range: 306 mm 	status: range valid	signal: 12.98 MCPS	ambient: 0.02 MCPS
+08:43:01.805 > 〽 range: 306 mm 	status: range valid	signal: 12.92 MCPS	ambient: 0.03 MCPS
+08:43:02.071 > 〽 range: 307 mm 	status: range valid	signal: 12.92 MCPS	ambient: 0.03 MCPS
+08:43:02.357 > 〽 range: 307 mm 	status: range valid	signal: 12.89 MCPS	ambient: 0.03 MCPS
+08:43:02.636 > 〽 range: 307 mm 	status: range valid	signal: 12.92 MCPS	ambient: 0.03 MCPS
+08:43:02.916 > 〽 range: 307 mm 	status: range valid	signal: 12.91 MCPS	ambient: 0.02 MCPS
+08:43:03.191 > 〽 range: 307 mm 	status: range valid	signal: 12.87 MCPS	ambient: 0.02 MCPS
+08:43:03.473 > 〽 range: 306 mm 	status: range valid	signal: 12.87 MCPS	ambient: 0.03 MCPS
+08:43:03.774 > 〽 range: 308 mm 	status: range valid	signal: 12.95 MCPS	ambient: 0.03 MCPS
+08:43:04.057 > 〽 range: 306 mm 	status: range valid	signal: 12.96 MCPS	ambient: 0.03 MCPS
+08:43:04.340 > 〽 range: 306 mm 	status: range valid	signal: 12.91 MCPS	ambient: 0.03 MCPS
+08:43:04.620 > 〽 range: 306 mm 	status: range valid	signal: 12.90 MCPS	ambient: 0.03 MCPS
+08:43:04.896 > 〽 range: 307 mm 	status: range valid	signal: 12.88 MCPS	ambient: 0.03 MCPS
+08:43:05.164 > 〽 range: 307 mm 	status: range valid	signal: 12.90 MCPS	ambient: 0.03 MCPS
+08:43:05.456 > 〽 range: 307 mm 	status: range valid	signal: 12.91 MCPS	ambient: 0.03 MCPS
+08:43:05.737 > 〽 range: 306 mm 	status: range valid	signal: 12.89 MCPS	ambient: 0.03 MCPS
+08:43:06.015 > 〽 range: 307 mm 	status: range valid	signal: 12.94 MCPS	ambient: 0.03 MCPS
+08:43:06.273 > 〽 range: 307 mm 	status: range valid	signal: 12.90 MCPS	ambient: 0.03 MCPS
+08:43:06.549 > 〽 range: 307 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:43:06.831 > 〽 range: 307 mm 	status: range valid	signal: 13.00 MCPS	ambient: 0.03 MCPS
+08:43:07.130 > 〽 range: 307 mm 	status: range valid	signal: 12.99 MCPS	ambient: 0.02 MCPS
+08:43:07.395 > 〽 range: 308 mm 	status: range valid	signal: 13.00 MCPS	ambient: 0.03 MCPS
+08:43:07.697 > 〽 range: 307 mm 	status: range valid	signal: 12.91 MCPS	ambient: 0.03 MCPS
+08:43:07.972 > 〽 range: 307 mm 	status: range valid	signal: 13.04 MCPS	ambient: 0.02 MCPS
+08:43:08.134 > 〽 Stopping continuous ranging accepted.
+08:43:28.131 > 〽 Start continuous ranging @ 280 ms accepted.
+08:43:28.356 > 〽 range: 305 mm 	status: range valid	signal: 12.87 MCPS	ambient: 0.02 MCPS
+08:43:28.654 > 〽 range: 306 mm 	status: range valid	signal: 12.91 MCPS	ambient: 0.02 MCPS
+08:43:28.924 > 〽 range: 305 mm 	status: range valid	signal: 12.91 MCPS	ambient: 0.03 MCPS
+08:43:29.214 > 〽 range: 305 mm 	status: range valid	signal: 12.95 MCPS	ambient: 0.03 MCPS
+08:43:29.482 > 〽 range: 304 mm 	status: range valid	signal: 12.95 MCPS	ambient: 0.03 MCPS
+08:43:29.756 > 〽 range: 305 mm 	status: range valid	signal: 12.90 MCPS	ambient: 0.03 MCPS
+08:43:30.056 > 〽 range: 306 mm 	status: range valid	signal: 12.92 MCPS	ambient: 0.03 MCPS
+08:43:30.323 > 〽 range: 306 mm 	status: range valid	signal: 12.86 MCPS	ambient: 0.02 MCPS
+08:43:30.611 > 〽 range: 305 mm 	status: range valid	signal: 12.93 MCPS	ambient: 0.02 MCPS
+08:43:30.873 > 〽 range: 306 mm 	status: range valid	signal: 12.88 MCPS	ambient: 0.03 MCPS
+08:43:31.176 > 〽 range: 307 mm 	status: range valid	signal: 12.99 MCPS	ambient: 0.02 MCPS
+08:43:31.449 > 〽 range: 306 mm 	status: range valid	signal: 12.89 MCPS	ambient: 0.02 MCPS
+08:43:31.733 > 〽 range: 305 mm 	status: range valid	signal: 12.95 MCPS	ambient: 0.03 MCPS
+08:43:31.988 > 〽 range: 305 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.02 MCPS
+08:43:32.274 > 〽 range: 306 mm 	status: range valid	signal: 13.01 MCPS	ambient: 0.03 MCPS
+08:43:32.565 > 〽 range: 306 mm 	status: range valid	signal: 12.93 MCPS	ambient: 0.03 MCPS
+08:43:32.847 > 〽 range: 307 mm 	status: range valid	signal: 12.96 MCPS	ambient: 0.03 MCPS
+08:43:33.117 > 〽 range: 305 mm 	status: range valid	signal: 12.96 MCPS	ambient: 0.06 MCPS
+08:43:33.401 > 〽 range: 307 mm 	status: range valid	signal: 12.92 MCPS	ambient: 0.03 MCPS
+08:43:33.681 > 〽 range: 306 mm 	status: range valid	signal: 12.91 MCPS	ambient: 0.02 MCPS
+08:43:33.973 > 〽 range: 307 mm 	status: range valid	signal: 12.97 MCPS	ambient: 0.02 MCPS
+08:43:34.248 > 〽 range: 307 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.02 MCPS
+08:43:34.534 > 〽 range: 306 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.02 MCPS
+08:43:34.805 > 〽 range: 307 mm 	status: range valid	signal: 12.96 MCPS	ambient: 0.03 MCPS
+08:43:35.093 > 〽 range: 306 mm 	status: range valid	signal: 12.98 MCPS	ambient: 0.02 MCPS
+08:43:35.361 > 〽 range: 306 mm 	status: range valid	signal: 12.99 MCPS	ambient: 0.02 MCPS
+08:43:35.630 > 〽 range: 306 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:43:35.915 > 〽 range: 306 mm 	status: range valid	signal: 12.93 MCPS	ambient: 0.03 MCPS
+08:43:36.212 > 〽 range: 306 mm 	status: range valid	signal: 12.98 MCPS	ambient: 0.02 MCPS
+08:43:36.477 > 〽 range: 306 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:43:36.752 > 〽 range: 307 mm 	status: range valid	signal: 12.92 MCPS	ambient: 0.03 MCPS
+08:43:37.039 > 〽 range: 307 mm 	status: range valid	signal: 12.98 MCPS	ambient: 0.03 MCPS
+08:43:37.313 > 〽 range: 307 mm 	status: range valid	signal: 13.00 MCPS	ambient: 0.03 MCPS
+08:43:37.601 > 〽 range: 307 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.02 MCPS
+08:43:37.881 > 〽 range: 307 mm 	status: range valid	signal: 12.95 MCPS	ambient: 0.02 MCPS
+08:43:38.149 > 〽 range: 307 mm 	status: range valid	signal: 12.96 MCPS	ambient: 0.03 MCPS
+08:43:38.453 > 〽 range: 307 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:43:38.737 > 〽 range: 306 mm 	status: range valid	signal: 12.99 MCPS	ambient: 0.03 MCPS
+08:43:38.992 > 〽 range: 308 mm 	status: range valid	signal: 13.03 MCPS	ambient: 0.03 MCPS
+08:43:39.296 > 〽 range: 306 mm 	status: range valid	signal: 13.03 MCPS	ambient: 0.03 MCPS
+08:43:39.558 > 〽 range: 306 mm 	status: range valid	signal: 13.08 MCPS	ambient: 0.03 MCPS
+08:43:39.826 > 〽 range: 307 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:43:40.112 > 〽 range: 307 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:43:40.412 > 〽 range: 306 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.02 MCPS
+08:43:40.691 > 〽 range: 306 mm 	status: range valid	signal: 13.08 MCPS	ambient: 0.02 MCPS
+08:43:40.954 > 〽 range: 306 mm 	status: range valid	signal: 13.09 MCPS	ambient: 0.03 MCPS
+08:43:41.230 > 〽 range: 305 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.05 MCPS
+08:43:41.529 > 〽 range: 306 mm 	status: range valid	signal: 13.06 MCPS	ambient: 0.03 MCPS
+08:43:41.809 > 〽 range: 305 mm 	status: range valid	signal: 12.98 MCPS	ambient: 0.03 MCPS
+08:43:42.082 > 〽 range: 306 mm 	status: range valid	signal: 13.09 MCPS	ambient: 0.03 MCPS
+08:43:42.352 > 〽 range: 305 mm 	status: range valid	signal: 13.09 MCPS	ambient: 0.03 MCPS
+08:43:42.629 > 〽 range: 307 mm 	status: range valid	signal: 13.03 MCPS	ambient: 0.02 MCPS
+08:43:42.912 > 〽 range: 307 mm 	status: range valid	signal: 13.04 MCPS	ambient: 0.03 MCPS
+08:43:43.200 > 〽 range: 306 mm 	status: range valid	signal: 13.06 MCPS	ambient: 0.02 MCPS
+08:43:43.482 > 〽 range: 306 mm 	status: range valid	signal: 13.09 MCPS	ambient: 0.02 MCPS
+08:43:43.755 > 〽 range: 307 mm 	status: range valid	signal: 13.09 MCPS	ambient: 0.03 MCPS
+08:43:44.027 > 〽 range: 307 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:43:44.316 > 〽 range: 306 mm 	status: range valid	signal: 13.01 MCPS	ambient: 0.03 MCPS
+08:43:44.586 > 〽 range: 308 mm 	status: range valid	signal: 12.97 MCPS	ambient: 0.02 MCPS
+08:43:44.875 > 〽 range: 306 mm 	status: range valid	signal: 12.93 MCPS	ambient: 0.03 MCPS
+08:43:45.162 > 〽 range: 306 mm 	status: range valid	signal: 12.95 MCPS	ambient: 0.03 MCPS
+08:43:45.432 > 〽 range: 306 mm 	status: range valid	signal: 13.00 MCPS	ambient: 0.03 MCPS
+08:43:45.724 > 〽 range: 306 mm 	status: range valid	signal: 13.04 MCPS	ambient: 0.03 MCPS
+08:43:46.011 > 〽 range: 307 mm 	status: range valid	signal: 13.00 MCPS	ambient: 0.03 MCPS
+08:43:46.292 > 〽 range: 307 mm 	status: range valid	signal: 12.98 MCPS	ambient: 0.02 MCPS
+08:43:46.570 > 〽 range: 307 mm 	status: range valid	signal: 13.01 MCPS	ambient: 0.03 MCPS
+08:43:46.826 > 〽 range: 308 mm 	status: range valid	signal: 13.03 MCPS	ambient: 0.02 MCPS
+08:43:47.112 > 〽 range: 307 mm 	status: range valid	signal: 12.99 MCPS	ambient: 0.03 MCPS
+08:43:47.408 > 〽 range: 306 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:43:47.687 > 〽 range: 307 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.02 MCPS
+08:43:47.973 > 〽 range: 307 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:43:48.129 > 〽 Stopping continuous ranging accepted.
+08:44:08.127 > 〽 Start continuous ranging @ 280 ms accepted.
+08:44:08.352 > 〽 range: 304 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.02 MCPS
+08:44:08.647 > 〽 range: 304 mm 	status: range valid	signal: 12.93 MCPS	ambient: 0.03 MCPS
+08:44:08.932 > 〽 range: 303 mm 	status: range valid	signal: 12.96 MCPS	ambient: 0.02 MCPS
+08:44:09.209 > 〽 range: 305 mm 	status: range valid	signal: 13.00 MCPS	ambient: 0.02 MCPS
+08:44:09.485 > 〽 range: 304 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.02 MCPS
+08:44:09.770 > 〽 range: 305 mm 	status: range valid	signal: 12.88 MCPS	ambient: 0.03 MCPS
+08:44:10.033 > 〽 range: 304 mm 	status: range valid	signal: 12.94 MCPS	ambient: 0.03 MCPS
+08:44:10.309 > 〽 range: 304 mm 	status: range valid	signal: 12.95 MCPS	ambient: 0.03 MCPS
+08:44:10.582 > 〽 range: 305 mm 	status: range valid	signal: 12.95 MCPS	ambient: 0.03 MCPS
+08:44:10.869 > 〽 range: 305 mm 	status: range valid	signal: 12.93 MCPS	ambient: 0.02 MCPS
+08:44:11.162 > 〽 range: 305 mm 	status: range valid	signal: 12.96 MCPS	ambient: 0.03 MCPS
+08:44:11.448 > 〽 range: 304 mm 	status: range valid	signal: 13.24 MCPS	ambient: 0.02 MCPS
+08:44:11.709 > 〽 range: 306 mm 	status: range valid	signal: 13.03 MCPS	ambient: 0.02 MCPS
+08:44:11.999 > 〽 range: 305 mm 	status: range valid	signal: 13.00 MCPS	ambient: 0.03 MCPS
+08:44:12.288 > 〽 range: 306 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.04 MCPS
+08:44:12.549 > 〽 range: 306 mm 	status: range valid	signal: 13.06 MCPS	ambient: 0.02 MCPS
+08:44:12.837 > 〽 range: 306 mm 	status: range valid	signal: 13.03 MCPS	ambient: 0.02 MCPS
+08:44:13.106 > 〽 range: 306 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:44:13.386 > 〽 range: 307 mm 	status: range valid	signal: 12.99 MCPS	ambient: 0.03 MCPS
+08:44:13.690 > 〽 range: 307 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:44:13.962 > 〽 range: 306 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:44:14.244 > 〽 range: 305 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:44:14.508 > 〽 range: 307 mm 	status: range valid	signal: 12.96 MCPS	ambient: 0.02 MCPS
+08:44:14.797 > 〽 range: 306 mm 	status: range valid	signal: 12.95 MCPS	ambient: 0.03 MCPS
+08:44:15.094 > 〽 range: 306 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:44:15.348 > 〽 range: 306 mm 	status: range valid	signal: 13.10 MCPS	ambient: 0.02 MCPS
+08:44:15.631 > 〽 range: 306 mm 	status: range valid	signal: 12.99 MCPS	ambient: 0.02 MCPS
+08:44:15.930 > 〽 range: 305 mm 	status: range valid	signal: 12.99 MCPS	ambient: 0.02 MCPS
+08:44:16.188 > 〽 range: 306 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:44:16.472 > 〽 range: 307 mm 	status: range valid	signal: 13.04 MCPS	ambient: 0.02 MCPS
+08:44:16.748 > 〽 range: 306 mm 	status: range valid	signal: 12.94 MCPS	ambient: 0.03 MCPS
+08:44:17.049 > 〽 range: 307 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.02 MCPS
+08:44:17.319 > 〽 range: 306 mm 	status: range valid	signal: 13.08 MCPS	ambient: 0.02 MCPS
+08:44:17.611 > 〽 range: 306 mm 	status: range valid	signal: 13.11 MCPS	ambient: 0.02 MCPS
+08:44:17.888 > 〽 range: 306 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:44:18.160 > 〽 range: 306 mm 	status: range valid	signal: 12.98 MCPS	ambient: 0.03 MCPS
+08:44:18.429 > 〽 range: 307 mm 	status: range valid	signal: 13.09 MCPS	ambient: 0.02 MCPS
+08:44:18.706 > 〽 range: 307 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:44:18.984 > 〽 range: 305 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.03 MCPS
+08:44:19.269 > 〽 range: 307 mm 	status: range valid	signal: 12.98 MCPS	ambient: 0.03 MCPS
+08:44:19.557 > 〽 range: 307 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:44:19.822 > 〽 range: 307 mm 	status: range valid	signal: 12.99 MCPS	ambient: 0.03 MCPS
+08:44:20.108 > 〽 range: 307 mm 	status: range valid	signal: 13.08 MCPS	ambient: 0.02 MCPS
+08:44:20.404 > 〽 range: 306 mm 	status: range valid	signal: 13.03 MCPS	ambient: 0.04 MCPS
+08:44:20.672 > 〽 range: 307 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.03 MCPS
+08:44:20.972 > 〽 range: 306 mm 	status: range valid	signal: 12.95 MCPS	ambient: 0.03 MCPS
+08:44:21.225 > 〽 range: 308 mm 	status: range valid	signal: 12.98 MCPS	ambient: 0.03 MCPS
+08:44:21.511 > 〽 range: 307 mm 	status: range valid	signal: 13.09 MCPS	ambient: 0.03 MCPS
+08:44:21.791 > 〽 range: 307 mm 	status: range valid	signal: 13.16 MCPS	ambient: 0.02 MCPS
+08:44:22.088 > 〽 range: 306 mm 	status: range valid	signal: 13.12 MCPS	ambient: 0.03 MCPS
+08:44:22.357 > 〽 range: 306 mm 	status: range valid	signal: 13.02 MCPS	ambient: 0.02 MCPS
+08:44:22.628 > 〽 range: 306 mm 	status: range valid	signal: 13.16 MCPS	ambient: 0.02 MCPS
+08:44:22.902 > 〽 range: 305 mm 	status: range valid	signal: 13.09 MCPS	ambient: 0.03 MCPS
+08:44:23.188 > 〽 range: 303 mm 	status: range valid	signal: 13.19 MCPS	ambient: 0.03 MCPS
+08:44:23.471 > 〽 range: 305 mm 	status: range valid	signal: 13.11 MCPS	ambient: 0.03 MCPS
+08:44:23.779 > 〽 range: 306 mm 	status: range valid	signal: 12.98 MCPS	ambient: 0.03 MCPS
+08:44:24.044 > 〽 range: 305 mm 	status: range valid	signal: 13.06 MCPS	ambient: 0.03 MCPS
+08:44:24.329 > 〽 range: 307 mm 	status: range valid	signal: 13.09 MCPS	ambient: 0.03 MCPS
+08:44:24.582 > 〽 range: 305 mm 	status: range valid	signal: 13.00 MCPS	ambient: 0.04 MCPS
+08:44:24.868 > 〽 range: 306 mm 	status: range valid	signal: 13.10 MCPS	ambient: 0.02 MCPS
+08:44:25.151 > 〽 range: 305 mm 	status: range valid	signal: 12.93 MCPS	ambient: 0.02 MCPS
+08:44:25.427 > 〽 range: 306 mm 	status: range valid	signal: 12.95 MCPS	ambient: 0.03 MCPS
+08:44:25.730 > 〽 range: 306 mm 	status: range valid	signal: 13.01 MCPS	ambient: 0.03 MCPS
+08:44:25.991 > 〽 range: 305 mm 	status: range valid	signal: 13.01 MCPS	ambient: 0.03 MCPS
+08:44:26.276 > 〽 range: 306 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.02 MCPS
+08:44:26.556 > 〽 range: 307 mm 	status: range valid	signal: 13.01 MCPS	ambient: 0.03 MCPS
+08:44:26.827 > 〽 range: 306 mm 	status: range valid	signal: 13.00 MCPS	ambient: 0.03 MCPS
+08:44:27.123 > 〽 range: 306 mm 	status: range valid	signal: 13.05 MCPS	ambient: 0.02 MCPS
+08:44:27.409 > 〽 range: 306 mm 	status: range valid	signal: 12.93 MCPS	ambient: 0.03 MCPS
+08:44:27.683 > 〽 range: 306 mm 	status: range valid	signal: 13.03 MCPS	ambient: 0.02 MCPS
+08:44:27.978 > 〽 range: 307 mm 	status: range valid	signal: 13.06 MCPS	ambient: 0.02 MCPS
+08:44:28.125 > 〽 Stopping continuous ranging accepted.
+08:44:48.123 > 〽 Start continuous ranging @ 280 ms accepted.
+08:44:48.347 > 〽 range: 0 mm 	status: range valid	signal: 307.12 MCPS	ambient: 0.03 MCPS
+08:44:48.645 > 〽 range: 9 mm 	status: range valid	signal: 52.34 MCPS	ambient: 0.00 MCPS
+08:44:48.913 > 〽 range: 8 mm 	status: range valid	signal: 49.12 MCPS	ambient: 0.00 MCPS
+08:44:49.194 > 〽 range: 9 mm 	status: range valid	signal: 51.30 MCPS	ambient: 0.00 MCPS
+08:44:49.477 > 〽 range: 9 mm 	status: range valid	signal: 52.39 MCPS	ambient: 0.00 MCPS
+08:44:49.745 > 〽 range: 8 mm 	status: range valid	signal: 53.74 MCPS	ambient: 0.00 MCPS
+08:44:50.031 > 〽 range: 7 mm 	status: range valid	signal: 54.16 MCPS	ambient: 0.00 MCPS
+08:44:50.313 > 〽 range: 8 mm 	status: range valid	signal: 55.16 MCPS	ambient: 0.00 MCPS
+08:44:50.585 > 〽 range: 8 mm 	status: range valid	signal: 55.90 MCPS	ambient: 0.00 MCPS
+08:44:50.884 > 〽 range: 8 mm 	status: range valid	signal: 55.04 MCPS	ambient: 0.00 MCPS
+08:44:51.150 > 〽 range: 8 mm 	status: range valid	signal: 53.13 MCPS	ambient: 0.00 MCPS
+08:44:51.217 > 〽 Sending statistics...
+08:44:51.219 >   • Interval: 305s (300s including 5s grace time)
+08:44:51.224 >   • Wi-Fi signal quality: 90%
+08:44:51.229 >   • Uptime: 304s
+08:44:51.420 > 〽 range: 333 mm 	status: signal fail	signal: 0.68 MCPS	ambient: 0.00 MCPS
