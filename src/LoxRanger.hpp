@@ -1,12 +1,12 @@
 /**
- * Homie Node for VL53L1x.
+ * Homie Node for VL53L0x.
  *
  */
 
 #pragma once
 
 #include <Homie.hpp>
-#include <VL53L1X.h>
+#include <VL53L0X.h>
 
 class LoxRanger : public HomieNode {
 
@@ -28,7 +28,7 @@ private:
   int _pinGPIO;
   unsigned long _ulCycleTime;
 
-  const char *cCaption = "• Ranging Module:";
+  const char *cCaption = "• VL53L0x Ranging Module:";
   const char *cIndent = "  ◦ ";
 
   const char *cRangeID = "range";
@@ -53,6 +53,6 @@ private:
 
   void printCaption();
 
-  VL53L1X lox;
+  VL53L0X lox;
 
 };

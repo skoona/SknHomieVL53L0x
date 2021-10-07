@@ -1,5 +1,5 @@
 /**
- * Homie Node for VL53L1x.
+ * Homie Node for VL53L0x.
  *
  */
 #include "LoxRanger.hpp"
@@ -89,25 +89,12 @@ void LoxRanger::loop()
     {
       if (!digitalRead(_pinGPIO))
       {
-        lox.read(false);
+		  uint32_t rangeMM = lox.readRangeContinuousMillimeters();
         char buf[32];
-        snprintf(buf, sizeof(buf), cRangeFormat, lox.ranging_data.range_mm);
+        snprintf(buf, sizeof(buf), cRangeFormat, rangeMM);
         setProperty(cRangeID).send(buf);
 
-        snprintf(buf, sizeof(buf), cStatusFormat, lox.rangeStatusToString(lox.ranging_data.range_status));
-        setProperty(cStatusID).send(buf);
-
-        snprintf(buf, sizeof(buf), cSignalFormat, lox.ranging_data.peak_signal_count_rate_MCPS);
-        setProperty(cSignalID).send(buf);
-
-        snprintf(buf, sizeof(buf), cAmbientFormat, lox.ranging_data.ambient_count_rate_MCPS);
-        setProperty(cAmbientID).send(buf);
-
-        Homie.getLogger() << "〽 range: " << lox.ranging_data.range_mm 
-                          << " mm \tstatus: " << lox.rangeStatusToString(lox.ranging_data.range_status) 
-                          << "\tsignal: " << lox.ranging_data.peak_signal_count_rate_MCPS 
-                          << " MCPS\tambient: " << lox.ranging_data.ambient_count_rate_MCPS 
-                          << " MCPS" << endl;
+        Homie.getLogger() << "〽 range: " << rangeMM << endl;
 
         ulLastTimebase = ulTimebase;
       }
@@ -148,22 +135,30 @@ void LoxRanger::setup() {
     vTaskDelay(1000);
     while (!lox.init())
     {
-      Homie.getLogger() << "• Failed to detect and initialize sensor!" << endl;
+      Homie.getLogger() << "• Failed to detect and initialize VL53L0x sensor!" << endl;
       vTaskDelay(1000);
     }
   }
 
-  if (lox.setDistanceMode(VL53L1X::Medium))
-  {
-    Homie.getLogger() << "〽 Medium distance mode accepted." << endl;
+  // lower the return signal rate limit (default is 0.25 MCPS)
+  if (lox.setSignalRateLimit(0.2)) {
+      Homie.getLogger() << "〽 0.2mcps rate limit (medium) accepted." << endl;
   }
 
-  if (lox.setMeasurementTimingBudget(200000))
-  {
-    Homie.getLogger() << "〽 200us timing budget accepted." << endl;
+  // increase laser pulse periods (defaults are 14 and 10 PCLKs)
+  if (lox.setVcselPulsePeriod(VL53L0X::VcselPeriodPreRange, 16)) {
+      Homie.getLogger() << "〽 16 pclks pulse period accepted." << endl;
+  }
 
-    ulCycleTimebase = millis(); // - _ulCycleTime; // need a startup delay
-    ulLastTimebase = millis();
+  if (lox.setVcselPulsePeriod(VL53L0X::VcselPeriodFinalRange, 12)) {
+      Homie.getLogger() << "〽 12 pclks final pulse period accepted." << endl;
+  }
+
+  if (lox.setMeasurementTimingBudget(200000)) {
+      Homie.getLogger() << "〽 200us timing budget accepted." << endl;
+
+      ulCycleTimebase = millis(); // - _ulCycleTime; // need a startup delay
+      ulLastTimebase = millis();
   }
 
   advertise(cRangeID)
