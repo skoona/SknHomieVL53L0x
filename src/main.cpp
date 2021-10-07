@@ -20,8 +20,7 @@
 
 HomieSetting<long> cfgDuration("duration", "Seconds to measure distance after triggered.");
 
-LoxRanger ranger(SKN_NODE_ID, SKN_NODE_TITLE, SKN_NODE_TYPE, 
-                 LOX_RUNTIME_SECONDS, LOX_PIN_SDA, LOX_PIN_SCL, LOX_PIN_GPIO);
+LoxRanger ranger(SKN_NODE_ID, SKN_NODE_TITLE, SKN_NODE_TYPE, LOX_RUNTIME_SECONDS, LOX_PIN_GPIO);
 
 bool broadcastHandler(const String &level, const String &value)
 {
@@ -33,6 +32,8 @@ bool broadcastHandler(const String &level, const String &value)
 void setup()
 {
     Serial.begin(115200);
+
+    Wire.begin(LOX_PIN_SDA, LOX_PIN_SCL, 400000U);
 
     Homie_setFirmware(SKN_MOD_NAME, SKN_MOD_VERSION);
     Homie_setBrand(SKN_MOD_BRAND);

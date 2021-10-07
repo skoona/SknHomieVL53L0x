@@ -11,7 +11,7 @@
 class LoxRanger : public HomieNode {
 
 public:
-  LoxRanger(const char *id, const char *name, const char *cType, const unsigned long durationInSeconds, const int sdaPin, const int sclPin, const int gpioPin);
+  LoxRanger(const char *id, const char *name, const char *cType, const unsigned long durationInSeconds, const int gpioPin);
 
   bool isReady();
   void setRunDuration(const int seconds);
@@ -25,8 +25,6 @@ protected:
   virtual bool handleInput(const HomieRange &range, const String &property, const String &value) override;
 
 private:
-  int _pinSDA;
-  int _pinSCL;
   int _pinGPIO;
   unsigned long _ulCycleTime;
 

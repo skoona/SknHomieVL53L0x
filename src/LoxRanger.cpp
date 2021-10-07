@@ -4,10 +4,8 @@
  */
 #include "LoxRanger.hpp"
 
-LoxRanger::LoxRanger(const char *id, const char *name, const char *cType, const unsigned long durationInSeconds, const int sdaPin, const int sclPin, const int gpioPin)
+LoxRanger::LoxRanger(const char *id, const char *name, const char *cType, const unsigned long durationInSeconds, const int gpioPin)
     : HomieNode(id, name, cType),
-      _pinSDA(sdaPin),
-      _pinSCL(sclPin),
       _pinGPIO(gpioPin),
       _ulCycleTime((durationInSeconds * 1000))
 {
@@ -129,7 +127,7 @@ void LoxRanger::loop()
  *
  */
 void LoxRanger::onReadyToOperate() {
-  Homie.getLogger() << "〽 " << getName() << " Ready to operate." << endl;
+  Homie.getLogger() << "〽 "<< "Node: " << getName() << " Ready to operate." << endl;
 
   vbEnabled = true;
 }
@@ -142,7 +140,6 @@ void LoxRanger::setup() {
 
   pinMode(_pinGPIO, INPUT_PULLUP);
 
-  Wire.begin(_pinSDA, _pinSCL, 400000U);
   vbEnabled = false;
 
   lox.setTimeout(500);
