@@ -130,6 +130,21 @@ void LoxRanger::loop()
  */
 void LoxRanger::onReadyToOperate() {
   Homie.getLogger() << "〽 " << getName() << " Ready to operate." << endl;
+
+  vbEnabled = true;
+}
+
+/**
+ *
+ */
+void LoxRanger::setup() {
+  printCaption();
+
+  pinMode(_pinGPIO, INPUT_PULLUP);
+
+  Wire.begin(_pinSDA, _pinSCL, 400000U);
+  vbEnabled = false;
+
   lox.setTimeout(500);
   if (!lox.init())
   {
@@ -153,20 +168,6 @@ void LoxRanger::onReadyToOperate() {
     ulCycleTimebase = millis(); // - _ulCycleTime; // need a startup delay
     ulLastTimebase = millis();
   }
-
-  vbEnabled = true;
-}
-
-/**
- *
- */
-void LoxRanger::setup() {
-  printCaption();
-
-  pinMode(_pinGPIO, INPUT_PULLUP);
-
-  Wire.begin(_pinSDA, _pinSCL, 400000U);
-  vbEnabled = false;
 
   advertise(cRangeID)
           .setName("distance in mm")
