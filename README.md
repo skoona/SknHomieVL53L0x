@@ -8,7 +8,7 @@ HomieNode V3 featuring:
 - VL53L1x Time of Flight Sensor capturing distance reading every 280 milliseconds once triggered.
 - Runs in continuous capture mode once triggered for the seconds indicated as  duration, set in the config.
 
-### Homie Serial Runtime Log
+### Homie Config: data/homie/config.json
 
 ```
 {
@@ -37,7 +37,7 @@ HomieNode V3 featuring:
 ```
 
 
-### Home MQTT Log
+### Homie Serial Runtime Log
 ```
 09:19:12.400 > 💡 Firmware Time of Flight Ranger (1.0.0)
 09:19:12.400 > 🔌 Booting into normal mode 🔌
