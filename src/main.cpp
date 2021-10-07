@@ -18,6 +18,10 @@
 #define LOX_PIN_SCL 22
 #define LOX_PIN_GPIO 19
 
+#ifndef LED_BUILTIN
+#define LED_BUILTIN 2
+#endif
+
 HomieSetting<long> cfgDuration("duration", "Seconds to measure distance after triggered.");
 
 LoxRanger ranger(SKN_NODE_ID, SKN_NODE_TITLE, SKN_NODE_TYPE, LOX_RUNTIME_SECONDS, LOX_PIN_GPIO);
@@ -42,6 +46,8 @@ void setup()
         .setDefaultValue(20)
         .setValidator([](long candidate)
                       { return candidate > 0 && candidate < 181; });
+
+    ranger.setRunDuration(cfgDuration.get());
 
     Homie.setBroadcastHandler(broadcastHandler)
         .setLedPin(LED_BUILTIN, LOW)
