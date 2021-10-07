@@ -1,97 +1,55 @@
 #include <Arduino.h>
+#include <Homie.h>
 #include <Wire.h>
-#include <VL53L1X.h>
 
-VL53L1X sensor;
+#include <LoxRanger.hpp>
 
-#define PIN_SDA 22
-#define PIN_SCL 21
-#define PIN_VL_GPIO 26
 
-volatile unsigned long gulTimebase = 0,
-                       gulLastTimebase = 0,
-                       gulCycleTime = 20000,
-                       gulCycleTimebase = 0,
-                       gulRangingDuration = 0,
-                       gulElapsedTime = 0;
-volatile bool gvbRangeDuration = false,
-              gvbLastRangeCycle = true,
-              gvbRangeCycle = false;
+#define SKN_MOD_NAME "Time of Flight Ranger"
+#define SKN_MOD_VERSION "1.0.0"
+#define SKN_MOD_BRAND "SknSensors"
+
+#define SKN_NODE_TITLE "TOF Ranger"
+#define SKN_NODE_TYPE "measurement"
+#define SKN_NODE_ID "position"
+
+#define LOX_RUNTIME_SECONDS 20
+#define LOX_PIN_SDA 21
+#define LOX_PIN_SCL 22
+#define LOX_PIN_GPIO 19
+
+HomieSetting<long> cfgDuration("duration", "Seconds to measure distance after triggered.");
+
+LoxRanger ranger(SKN_NODE_ID, SKN_NODE_TITLE, SKN_NODE_TYPE, 
+                 LOX_RUNTIME_SECONDS, LOX_PIN_SDA, LOX_PIN_SCL, LOX_PIN_GPIO);
+
+bool broadcastHandler(const String &level, const String &value)
+{
+    Homie.getLogger() << "Received broadcast level " << level << ": " << value << endl;
+
+    return true;
+}
 
 void setup()
 {
     Serial.begin(115200);
-    pinMode(PIN_VL_GPIO, INPUT_PULLUP);
 
-    Wire.begin(PIN_SDA, PIN_SCL, 400000U);
-    // Wire.begin();
-    // Wire.setClock(200000);
-    
+    Homie_setFirmware(SKN_MOD_NAME, SKN_MOD_VERSION);
+    Homie_setBrand(SKN_MOD_BRAND);
 
-    sensor.setTimeout(500);
-    if (!sensor.init())
-    {
-        vTaskDelay(1000);
-        while (!sensor.init()) {
-            Serial.println("Failed to detect and initialize sensor!");
-            vTaskDelay(1000);
-        }
-    }
+    cfgDuration
+        .setDefaultValue(20)
+        .setValidator([](long candidate)
+                      { return candidate > 0 && candidate < 181; });
 
-    if (sensor.setDistanceMode(VL53L1X::Medium)) {
-        Serial.println("Medium distance mode accepted.");
-    }
-    if (sensor.setMeasurementTimingBudget(170000)) {
-        Serial.println("170us timing budget accepted.");
+    Homie.setBroadcastHandler(broadcastHandler)
+        .setLedPin(LED_BUILTIN, LOW)
+        .disableResetTrigger();
 
-        gulCycleTimebase = millis() - gulCycleTime;
-        gulLastTimebase = millis();
-        gulRangingDuration = 250;
-        
-        // sensor.startContinuous(250);
-        // Serial.println("Start continuous ranging at 250ms accepted.");
-    }
+    Homie.setup();
 }
 
 void loop()
 {
-    gulTimebase = millis();
-    gulElapsedTime = gulTimebase - gulCycleTimebase;
-    gvbRangeDuration = ((gulTimebase - gulLastTimebase) >= gulRangingDuration);
-    gvbRangeCycle = (gulElapsedTime >= gulCycleTime);
-
-    if (gvbLastRangeCycle && gvbRangeCycle)  {
-        gvbLastRangeCycle = !gvbLastRangeCycle;
-        sensor.startContinuous(250);
-        Serial.println("Start continuous ranging @ 250ms accepted.");
-    }
-
-    if (gvbRangeDuration && gvbRangeCycle) {
-        if (!digitalRead(PIN_VL_GPIO)) 
-        {
-            sensor.read(false);
-
-            Serial.print("range: ");
-            Serial.print(sensor.ranging_data.range_mm);
-            Serial.print("\tstatus: ");
-            Serial.print(VL53L1X::rangeStatusToString(sensor.ranging_data.range_status));
-            Serial.print("\tpeak signal: ");
-            Serial.print(sensor.ranging_data.peak_signal_count_rate_MCPS);
-            Serial.print("\tambient: ");
-            Serial.print(sensor.ranging_data.ambient_count_rate_MCPS);
-
-            Serial.println();
-
-            gulLastTimebase = gulTimebase;
-            gvbRangeDuration = false;
-        }
-    }
-
-    if (gulElapsedTime >= (gulCycleTime * 2 - 10))
-    {
-        sensor.stopContinuous();
-        gulCycleTimebase = gulTimebase;
-        gvbLastRangeCycle = !gvbLastRangeCycle;
-        Serial.println("Stoping continuous ranging accepted.");
-    }
+    Homie.loop();
 }
