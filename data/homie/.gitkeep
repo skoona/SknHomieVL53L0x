@@ -1,1 +1,5 @@
-place keeper
+add a homie config.json file in this directory
+build filesystem image
+upload filesystem image
+- then build firmware and upload it
+- done; enjoy
